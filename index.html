@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIE–NC Weekly 회의록</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#ffffff; --panel-2:#fbfbfd; --text:#15181d; --muted:#616b7a;
+    --line:#e3e6ec; --accent:#2f5bd7; --accent-soft:#eaf0ff;
+    --ok:#1a7f52; --ok-soft:#e6f5ee; --warn:#9a6207; --warn-soft:#fdf3e0;
+    --risk:#b2322c; --risk-soft:#fdecea; --chip:#eef1f6;
+    --radius:14px; --maxw:1180px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0e1116; --panel:#161a21; --panel-2:#1b2029; --text:#e8ebf0; --muted:#9aa4b2;
+      --line:#272d38; --accent:#7ea2ff; --accent-soft:#1b2540;
+      --ok:#5fd0a0; --ok-soft:#12281f; --warn:#e5b567; --warn-soft:#2a2313;
+      --risk:#f28b82; --risk-soft:#2c1817; --chip:#222835;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0e1116; --panel:#161a21; --panel-2:#1b2029; --text:#e8ebf0; --muted:#9aa4b2;
+    --line:#272d38; --accent:#7ea2ff; --accent-soft:#1b2540;
+    --ok:#5fd0a0; --ok-soft:#12281f; --warn:#e5b567; --warn-soft:#2a2313;
+    --risk:#f28b82; --risk-soft:#2c1817; --chip:#222835;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Malgun Gothic",
+      "Noto Sans KR",Segoe UI,Roboto,sans-serif;
+    line-height:1.62; -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:28px 16px 80px}
+  header.top{display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; margin-bottom:22px}
+  .brand h1{font-size:20px; margin:0; letter-spacing:-.01em}
+  .brand p{margin:2px 0 0; color:var(--muted); font-size:13px}
+  .btn{
+    background:var(--panel); border:1px solid var(--line); color:var(--text);
+    border-radius:999px; padding:7px 14px; font-size:13px; cursor:pointer;
+  }
+  .btn:hover{border-color:var(--accent)}
+  .layout{display:grid; grid-template-columns:230px 1fr; gap:22px; align-items:start}
+  @media (max-width:860px){ .layout{grid-template-columns:1fr} }
+  nav.weeks{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:10px; position:sticky; top:16px;
+  }
+  @media (max-width:860px){ nav.weeks{position:static} }
+  nav.weeks h2{font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin:6px 8px 10px}
+  nav.weeks button{
+    display:block; width:100%; text-align:left; background:transparent; border:0; color:var(--text);
+    padding:9px 10px; border-radius:9px; cursor:pointer; font-size:14px; line-height:1.35;
+  }
+  nav.weeks button span{display:block; font-size:12px; color:var(--muted)}
+  nav.weeks button:hover{background:var(--panel-2)}
+  nav.weeks button[aria-current="true"]{background:var(--accent-soft); color:var(--accent); font-weight:600}
+  nav.weeks button[aria-current="true"] span{color:var(--accent)}
+  main{min-width:0}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:22px; margin-bottom:18px}
+  .card > h3{
+    margin:0 0 14px; font-size:13px; letter-spacing:.07em; text-transform:uppercase; color:var(--muted);
+  }
+  .title-block h2{margin:0 0 6px; font-size:26px; letter-spacing:-.02em}
+  .meta{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+  .chip{background:var(--chip); border-radius:999px; padding:4px 11px; font-size:12.5px; color:var(--muted)}
+  .chip b{color:var(--text); font-weight:600}
+  .summary{font-size:15.5px; margin:0}
+  ul.clean{margin:0; padding-left:18px}
+  ul.clean li{margin:6px 0}
+  .topic{border-top:1px solid var(--line); padding:16px 0}
+  .topic:first-of-type{border-top:0; padding-top:0}
+  .topic h4{margin:0 0 8px; font-size:16px; display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+  .tag{font-size:11px; padding:2px 8px; border-radius:999px; font-weight:600; letter-spacing:.02em}
+  .tag.deal{background:var(--accent-soft); color:var(--accent)}
+  .tag.legal{background:var(--warn-soft); color:var(--warn)}
+  .tag.ops{background:var(--ok-soft); color:var(--ok)}
+  .stance{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px}
+  @media (max-width:640px){ .stance{grid-template-columns:1fr} }
+  .stance div{background:var(--panel-2); border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-size:14px}
+  .stance strong{display:block; font-size:12px; color:var(--muted); margin-bottom:4px; letter-spacing:.03em}
+  table{width:100%; border-collapse:collapse; font-size:14px}
+  th,td{text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); font-weight:600}
+  td.who{white-space:nowrap; font-weight:600}
+  td.due{white-space:nowrap; color:var(--muted)}
+  .state{font-size:11.5px; padding:2px 9px; border-radius:999px; white-space:nowrap}
+  .state.open{background:var(--warn-soft); color:var(--warn)}
+  .state.done{background:var(--ok-soft); color:var(--ok)}
+  .state.hold{background:var(--risk-soft); color:var(--risk)}
+  .risk{background:var(--risk-soft); border-left:3px solid var(--risk); border-radius:8px; padding:10px 12px; margin:8px 0; font-size:14px}
+  .note{background:var(--panel-2); border:1px dashed var(--line); border-radius:10px; padding:12px 14px; font-size:13.5px; color:var(--muted)}
+  details.quotes{margin-top:6px}
+  details.quotes summary{cursor:pointer; font-size:13.5px; color:var(--accent)}
+  blockquote{
+    margin:12px 0; padding:8px 0 8px 14px; border-left:2px solid var(--line);
+    font-size:13.5px; color:var(--muted)
+  }
+  blockquote b{color:var(--text); font-weight:600; display:block; font-size:12.5px; margin-bottom:2px}
+  footer{margin-top:28px; color:var(--muted); font-size:12.5px; text-align:center}
+  @media print{
+    body{background:#fff} nav.weeks,.btn{display:none} .layout{grid-template-columns:1fr}
+    .card{break-inside:avoid; border-color:#ccc}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>SIE–NC Weekly 회의록</h1>
+      <p>주간 정기 회의 기록 · 매주 업데이트</p>
+    </div>
+    <button class="btn" id="themeBtn" type="button">화면 모드 전환</button>
+  </header>
+
+  <div class="layout">
+    <nav class="weeks" aria-label="회차 목록">
+      <h2>회차</h2>
+      <div id="weekList"></div>
+    </nav>
+    <main id="content" aria-live="polite"></main>
+  </div>
+
+  <footer>원문: Clova Note 자동 전사(clovanote.naver.com) 기반 정리 · 대외비</footer>
+</div>
+
+<script>
+/* =========================================================================
+   회의록 데이터. 새 주차를 추가할 때는 MEETINGS 배열 맨 앞에 객체 하나를 추가.
+   상태값: state = "open" | "done" | "hold"
+   토픽 태그: tag = "deal" | "legal" | "ops"
+   ========================================================================= */
+const MEETINGS = [
+{
+  id: "2026-09-30",
+  label: "2026-09-30",
+  sub: "9월 5주차",
+  title: "SIE–NC Weekly — 2026년 9월 30일",
+  meta: [
+    ["회의일", "2026.09.30(수)"],
+    ["소요", "26분 00초"],
+    ["기록", "임솔이"],
+    ["참석", "양사 합계 5명(원문 화자 구분 기준)"],
+    ["전사본", "2026.10.05 17:04 생성"]
+  ],
+  summary: "SIE가 commercial term sheet 최종 레드라인을 금일~내일 중 송부하며, NC 검토(1~2일) 후 이견이 없으면 SIE 법무가 금주 내 long form 드래프팅에 착수해 차주 초안을 공유하는 일정으로 합의. 레드라인의 주요 변경은 (1) 계약 기간 정의 명확화, (2) NC 법무가 추가한 예외 조항 3~4개를 2개로 축약, (3) 45일 심십 윈도우를 놓친 타이틀의 PlayStation 출시 의무 명확화 세 가지. Corporate term sheet에서는 정보제공권(information rights)의 사업 부문 논의 주기(분기 vs 반기)가 유일한 쟁점으로 남음.",
+  headlines: [
+    "Commercial term sheet 레드라인 송부: 금일~내일(SIE 시간). NC 검토 1~2일 후 term sheet 추가 논의 여부 회신.",
+    "Long form: NC 이견 없으면 SIE 법무가 금주 착수, 차주 초안 공유 목표 — 9/16 회의의 진입 시점 이견은 해소.",
+    "계약 기간 = 5년 또는 PS 5개 타이틀 인도 완료 중 '더 늦은 시점'. 9년차 선정 타이틀은 10년 경과 후 출시도 의무 유지.",
+    "45일 심십 윈도우를 놓친 타이틀도 PS 출시 의무 유지, 특히 경쟁 플랫폼보다 선출시. 12개월 독점 의무 귀속은 확인 필요.",
+    "Exhibit A(마케팅 지원), 계열사 적용 범위는 long form에서 협의 — 양측 합의.",
+    "정보제공권: NC는 사업 부문 반기 1회 제안, SIE(Hector)는 반기로는 부족하다는 입장. SIE가 4개월/6개월 내부 검토 후 회신."
+  ],
+  carryover: [
+    ["Long form 진입 시점 이견 (9/16)", "해소. SIE가 이번 레드라인을 기준으로 long form 드래프팅 착수 의사 표명", "done"],
+    ["Commercial term sheet 발송 (9/16)", "NC 초안 → SIE 레드라인 단계로 진행. 금일~내일 SIE가 수정본 송부", "done"],
+    ["Corporate term sheet 수정본 회신 (9/16)", "교환 완료된 것으로 보이며, NC 법무 검토 중. 정보제공권 1건이 유일한 코멘트가 될 가능성 높음", "open"],
+    ["지분 5% 룰 / 공시 범위 (9/16, 마지막 미결 항목)", "금일 회의에서 언급 없음 — 상태 미확인. 별도 확인 필요", "hold"],
+    ["TGS 도쿄 참석자 확인 (9/16)", "금일 회의에서 언급 없음(행사 종료)", "done"]
+  ],
+  topics: [
+    {
+      tag: "deal", tagLabel: "Commercial TS",
+      title: "계약 기간(term) 정의 명확화",
+      points: [
+        "SIE 수정 내용: 계약 기간은 '5년' 또는 'PlayStation에 5개 타이틀 인도 완료' 중 더 늦은 시점까지. 원 타이틀뿐 아니라 대체 타이틀도 포함.",
+        "대체 타이틀 선정은 10년 기한 내에 가능. 예컨대 9년차(또는 그 마지막 달)에 선정된 타이틀이라면 11~12년차 출시라도 해당 타이틀의 인도 및 공동 마케팅 의무가 유지됨.",
+        "NC 이해(기존): 10년 내 5개 타이틀을 달성하지 못하면 최선노력 의무로 종료. 9년차에 선정된 대체 타이틀이 11~12년차에 45일 심십을 못 맞추면 그 시점에서 종료되고, 추가 대체 타이틀은 선정되지 않는다는 해석.",
+        "SIE 확인(참석자 1): 9년차에 선정된 5번째 타이틀은 11~12년차에도 출시 노력 의무가 있으나, 심십을 놓쳤을 때 12년차에 또 다른 대체 타이틀을 선정해 15년차에 출시하는 구조는 아니라는 점에서 양측 이해 일치.",
+        "Hector: 투자의 핵심 가치는 'NC 타이틀 5종의 PlayStation 출시'이며, 10년 뒤 3~4개만 출시되면 의무 미이행이라는 점을 확인. 단 45일 경과 후에도 브랜드 연계·마케팅 의무가 이행된다면 수용 가능하며 무기한 연장을 의도하지 않음.",
+        "결론: 같은 내용을 보고 있다는 점 상호 확인. 구체 문구는 레드라인에서 확인."
+      ],
+      stance: [
+        ["NC", "최선노력 의무이며, 심십 미준수 시 추가 대체 타이틀 선정 없이 종료"],
+        ["SIE", "5개 타이틀 인도가 의무의 실체. 9년차 선정 타이틀은 10년 경과 후에도 의무 유지"]
+      ]
+    },
+    {
+      tag: "legal", tagLabel: "Commercial TS",
+      title: "예외·이탈 조항 축약",
+      points: [
+        "NC 법무가 추가한 예외/이탈(out, exit) 및 제한 조항이 3~4개 존재한다고 SIE가 지적.",
+        "SIE 법무가 이를 단순화해 2개 수준으로 축약. 세부는 레드라인에서 확인."
+      ]
+    },
+    {
+      tag: "deal", tagLabel: "Commercial TS",
+      title: "45일 심십 윈도우 미준수 시 PS 출시 의무",
+      points: [
+        "SIE 우려: 45일 유예기간을 반복적으로 놓치면 '대체를 거듭하며 결국 PlayStation에 아무 타이틀도 출시되지 않는' 해석이 가능하고, SIE 경영진이 그렇게 읽을 수 있음.",
+        "추가 문구: PC 출시 후 45일을 초과해 심십을 놓친 타이틀도 최종적으로는 PlayStation에 출시되며, 최소한 경쟁 플랫폼(Xbox, Nintendo 등)보다 먼저 PlayStation에 출시.",
+        "NC 질문: 그 경우에도 12개월 독점 등 경쟁 플랫폼 관련 의무가 적용되는지.",
+        "SIE 답변(잠정): 45일 윈도우를 놓친 시점에 12개월 독점 등 의무는 대체 타이틀에 귀속되며, 놓친 타이틀에 대해서는 60~90일 늦더라도 PlayStation 출시 노력을 요청하는 취지. 단 확정 답변은 Hector 확인 필요 — 레드라인 문구 확인 후 NC가 검토.",
+        "SIE: 이 수준의 세부는 long form에서 다룰 사안으로 봄."
+      ],
+      risk: "12개월 독점 의무가 '놓친 타이틀'에도 적용되는지는 미확정. SIE 측 답변이 잠정적이며 Hector 확인이 필요한 상태 — 레드라인 문구 검토 시 우선 확인 필요."
+    },
+    {
+      tag: "deal", tagLabel: "Commercial TS",
+      title: "Exhibit A(마케팅 지원) · 타이틀별 계약 구조 · 계열사 범위",
+      points: [
+        "Exhibit A의 마케팅 지원 조항이 전부 삭제된 데 대해 SIE는 'long form에서 협의·작성한다'는 코멘트를 추가. 투자·파트너십의 중요한 부분이라는 입장.",
+        "NC도 Exhibit A에 세부가 많아 long form 논의를 선호 — 양측 합의.",
+        "참석자 4(SIE): term sheet 수정 중 '선정된 5개 타이틀 각각에 별도 타이틀 계약이 존재한다'는 오해를 바로잡는 편집이 있었음. 5개 전부에 개별 계약을 두지 않으며, 특정 코너 케이스에 한함. Exhibit A의 내용은 definitive agreement에서 다룰 예정.",
+        "계열사 범위: NC 법무가 '모든 계열사가 definitive agreement 적용 대상은 아니다'라는 코멘트를 남긴 건에 대해, SIE는 최소한 5개 타이틀을 담당하는 스튜디오는 모두 적용돼야 한다는 입장. NC도 long form 논의 사안으로 동의."
+      ]
+    },
+    {
+      tag: "legal", tagLabel: "Corporate TS",
+      title: "정보제공권(information rights) 논의 주기 (쟁점)",
+      points: [
+        "NC: 재무 부문은 분기 1회 수용. 사업 부문(타이틀 관련) 논의는 분기 주기로는 내용이 충실하기 어렵다는 입장.",
+        "NC 근거 2가지: (1) MMORPG 프로젝트의 핵심 개발 마일스톤이 6개월 주기, (2) 매 분기 발표 자료 준비가 프로젝트팀에 부담이 되고 개발 집중·자율성을 해친다는 사업팀 의견.",
+        "Hector: PC에서의 MMORPG 개발과 PlayStation 플랫폼 개발은 다름. 현지 account manager·technical account manager가 가능한 자주 접촉해 하드웨어 로드맵, SDK 등 중대한 변경을 공유해야 하며, 반기 1회로는 정보 교환이 충분하지 않다는 입장.",
+        "참석자 1 정리: 두 레벨을 혼동하고 있을 가능성. (a) 워킹 레벨 — 선정 타이틀 개발 중 account management 조직과 개발팀 간 일·주 단위 협업, (b) 하이레벨 — 파이프라인·진행 현황 공유(현재 term sheet상 분기).",
+        "NC: 논의 대상은 하이레벨이며 반기 1회면 충분, 워킹 레벨은 오히려 더 빈번해도 무관하다는 입장으로 정리.",
+        "SIE: 4개월 또는 6개월 주기 여부를 내부 검토 후 회신. 선정 타이틀 관련 중대한 계획 변경이 있으면 주기를 기다리지 않고 애드혹 미팅 개최에 동의. 최종 문구는 long form에서 정리.",
+        "참석자 5: 이 조항이 commercial term sheet가 아니라 corporate term sheet에 있다는 점을 우려로 제기. SIE 설명 — '전원이 합의한 타이틀의 최신 현황' 공유라는 하이레벨 성격 때문에 corporate 쪽에 배치했고 분기를 합리적 주기로 봤다는 것.",
+        "Hector 추가 요청: '부담'의 실체를 구체화해달라는 요청. 자료 준비 자체인지, 다른 요인인지 이해하기 어렵다는 입장. 개발 현황은 주 단위로 내부 공유·경영진 보고가 이뤄질 것으로 가정.",
+        "NC 답변: 자료 준비로 개발에 집중하기 어렵고 자율성이 침해된다는 인식으로 이해하고 있으며, 구체 내용은 사업 책임자(홍용) 확인 후 공유 예정.",
+        "NC 법무의 corporate term sheet 검토는 진행 중이며, 이 항목이 유일한 코멘트가 될 가능성이 높음."
+      ],
+      stance: [
+        ["NC", "하이레벨은 반기 1회 + 중대 변경 시 수시 공유. 근거는 6개월 마일스톤 주기와 팀 부담"],
+        ["SIE", "반기로는 정보 교환이 불충분. 4개월/6개월 내부 검토 후 회신, 애드혹 미팅에는 동의"]
+      ]
+    },
+    {
+      tag: "ops", tagLabel: "Schedule",
+      title: "Term sheet → Long form 일정",
+      points: [
+        "SIE: commercial term sheet 레드라인은 금일 송부 준비 완료, SIE 시간 기준 내일이 될 수 있음.",
+        "NC: 수령 후 1~2일 검토 → term sheet 단계에서 추가 논의가 필요한지 회신.",
+        "SIE: 추가 논의가 불필요하면 법무가 금주 내 long form 드래프팅 착수, 차주 초안 공유 목표.",
+        "SIE 입장: 레드라인은 '상당히 양호'한 수준이며 이를 최종본으로 보고 long form 작성 예정. 다만 NC 또는 NC 법무가 '차이가 크다'고 판단하면 term sheet 단계 논의를 이어갈 수 있음."
+      ]
+    }
+  ],
+  decisions: [
+    "계약 기간 해석에 대해 양측 이해가 동일함을 확인 — 9년차 선정 타이틀은 10년 경과 후에도 인도·마케팅 의무 유지, 심십 미준수 시 추가 대체 타이틀은 없음.",
+    "Exhibit A(마케팅 지원)는 long form에서 협의·작성.",
+    "선정 5개 타이틀 각각에 별도 타이틀 계약을 두지 않음 — 특정 코너 케이스에 한함. Exhibit A 내용은 definitive agreement에서 다룸.",
+    "계열사 적용 범위는 long form 논의 사안으로 이월.",
+    "정보제공권은 워킹 레벨과 하이레벨을 구분하고, 중대한 계획 변경 시 애드혹 미팅을 개최하는 방향에 공감. 주기 확정은 SIE 내부 검토 후.",
+    "NC 검토 결과 이견이 없으면 term sheet 왕복을 종료하고 long form 드래프팅으로 이동."
+  ],
+  actions: [
+    ["SIE", "Commercial term sheet 최종 레드라인 송부", "금일~내일(SIE 시간)", "open"],
+    ["NC", "레드라인 검토 후 term sheet 단계 추가 논의 필요 여부 회신", "수령 후 1~2일", "open"],
+    ["SIE 법무", "Long form 드래프팅 착수 및 초안 공유", "금주 착수 / 차주 공유 목표", "open"],
+    ["SIE", "하이레벨 정보제공 주기(4개월 vs 6개월) 내부 검토 후 회신", "미정", "open"],
+    ["SIE / Hector", "45일 미준수 타이틀의 12개월 독점 의무 귀속 확인", "레드라인 검토 시", "open"],
+    ["NC", "사업팀(홍용) 측 '준비 부담'의 구체 내용 확인 후 공유", "미정", "open"],
+    ["NC 법무", "Corporate term sheet 검토 완료 및 코멘트 회신(정보제공권 1건 예상)", "미정", "open"],
+    ["양측", "Exhibit A, 계열사 범위, 정보제공 주기 문구 → long form에서 확정", "long form 단계", "hold"]
+  ],
+  open: [
+    "정보제공권 하이레벨 논의 주기 — 분기(SIE 원안) vs 반기(NC 제안) vs 4개월(SIE 검토안).",
+    "'준비 부담'의 실체 — Hector가 구체화 요청, NC가 사업팀 확인 후 공유 예정.",
+    "45일 심십 윈도우를 놓친 타이틀에 12개월 독점 의무가 적용되는지 (SIE 답변 잠정).",
+    "Definitive agreement의 계열사 적용 범위 — SIE는 5개 타이틀 담당 스튜디오 전체 적용 요구.",
+    "9/16 회의의 지분 5% 룰·공시 범위 건은 금일 의제에 없었음 — 별도 확인 필요."
+  ],
+  quotes: [
+    ["SIE 01:01", "It will be the later of either five years or until the five titles have been delivered on PlayStation, whether that's the original titles or a replacement title."],
+    ["NC 04:08", "Let's say one of the five titles intended to replace another title in year 9 … it may go over 10 years. So if at that moment, for example year 11 or 12, we could not meet the simship, then that's it."],
+    ["SIE / Hector 03:30", "The entire value of this is five titles associated with NCSOFT releasing on PlayStation … at the end of 10 years if you release three titles or four titles, that doesn't fulfill the obligation."],
+    ["SIE 08:51", "At least we would like it to launch on PlayStation before any competing platform … we don't want you to miss the 45 day window, have a replacement title, but then release on Xbox or Nintendo before coming to PlayStation."],
+    ["SIE 11:18", "The red line is pretty good — to the point where we intend to send this and start drafting the long form based off of this final one."],
+    ["NC 17:07", "For the MMORPG projects, a six month cadence would be more suitable because key development milestones are based on 6 months."],
+    ["SIE / Hector 18:16", "Doing semiannual is not going to be as comprehensive in ensuring that we are exchanging information … doing that once a year, twice a year, I don't think that's going to be enough."],
+    ["SIE 21:32", "Let us take that back and we'll discuss within our side whether it needs to be every four months or every six months … if there is a material deviation, we should have an ad hoc meeting."]
+  ],
+  caveats: [
+    "원문 전사본의 타임스탬프는 2026.10.05 17:04(업로드·생성 시각)이며, 회의 자체는 사용자 확인에 따라 2026.09.30 진행 건으로 기록함.",
+    "Clova Note 자동 전사 기반이므로 고유명사·숫자에 오류 가능성이 있음. 'simship'은 원문에 'samship/same shift/same ship' 등으로, '홍용'은 'Hong Yong/the Hong'으로, NC 측 합의 당사자로 언급된 이름은 '히오스/효숙'으로 전사됨 — 실제 표기 확인 필요.",
+    "화자 소속(NC/SIE) 및 이름은 발언 맥락에 따른 추정. 참석자 3은 Hector(SIE)로 특정 가능하며, 참석자 4는 Jordan(SIE)으로 추정되나 확정은 아님. 참석자 5는 소속이 불명확함.",
+    "화자 번호는 파일별로 독립적으로 부여되므로 9/16 회의록의 참석자 번호와 동일 인물을 의미하지 않음."
+  ]
+},
+{
+  id: "2026-09-16",
+  label: "2026-09-16",
+  sub: "9월 3주차",
+  title: "SIE–NC Weekly — 2026년 9월 16일",
+  meta: [
+    ["일시", "2026.09.16(수) 08:35"],
+    ["소요", "13분 20초"],
+    ["기록", "임솔이"],
+    ["참석", "양사 합계 5명(원문 화자 구분 기준)"],
+    ["형식", "정기 주간 콜"]
+  ],
+  summary: "Commercial term sheet는 당일 Hector–KO 통화(18:00) 이후 NC가 초안을 작성해 이번 주말~다음 주 초 발송하기로 함. Corporate term sheet는 SIE 내부 법무 수정본을 수일 내 회신 예정. 남은 쟁점은 (1) term sheet 합의 확인 없이 곧바로 long form 드래프팅에 들어갈지에 대한 절차 이견, (2) 지분 5% 초과 시 공시 부담 및 상업 조건 공개 리스크 두 가지.",
+  headlines: [
+    "Hector–KO 통화(당일 18:00)를 끝으로 commercial term sheet 주요 조건 확정 예정.",
+    "Commercial term sheet 초안 작성·발송은 NC(김앤장 참여), 목표 시점은 금주 말~차주 초.",
+    "Corporate term sheet 수정본은 SIE이 commercial 발송 전에 먼저 회신.",
+    "Long form 진입 시점: NC는 즉시 진입 선호 / SIE은 term sheet 합의 확인을 선행 마일스톤으로 요구.",
+    "5% 룰(대량보유 공시)이 사실상 마지막 미결 항목. SIE은 24~36시간 내 법률자문 재확인 후 입장 확정."
+  ],
+  topics: [
+    {
+      tag: "deal", tagLabel: "Deal",
+      title: "Commercial term sheet 진행 상황",
+      points: [
+        "SIE: 핵심 조건 일부에 대해 Hector와 최종 조율을 마쳤고, 당일 18:00 KO와의 통화가 마지막 논의가 될 것으로 예상.",
+        "NC: 해당 통화 이후 term sheet를 작성하며 김앤장이 드래프팅에 참여. 발송 목표는 금주 말 또는 차주 초.",
+        "SIE: 상업 조건 정렬까지 오래 걸렸으나 이제 거의 도달했다는 평가."
+      ]
+    },
+    {
+      tag: "deal", tagLabel: "Process",
+      title: "Long form 드래프팅 진입 시점 (이견)",
+      points: [
+        "NC 인식: Hector와 CBO 조직이 'term sheet 왕복 없이 long form으로 바로 간다'는 데 정렬된 것으로 이해 — SIE도 같은 인식인지 확인 요청.",
+        "SIE 입장: term sheet 합의 확인을 중요한 마일스톤으로 봄. 문서를 실제로 받아보기 전에는 합의를 보장할 수 없고, 미결 항목이 남은 채 long form에 들어가면 로펌 비용만 커진다는 우려.",
+        "단, 특정 조건·기준은 애초에 long form으로 이월하기로 양측이 이미 합의 — 이 부분은 이견 없음.",
+        "결론: commercial term sheet 발송 이후 다시 논의."
+      ],
+      stance: [
+        ["NC", "주요 조건이 대체로 정렬됐으므로 세부는 long form에서 다루는 편이 양측 모두에 효율적"],
+        ["SIE", "term sheet 본문에 대한 정렬 확인이 먼저. 정렬될 것으로 예상하나 사전 보장은 불가"]
+      ]
+    },
+    {
+      tag: "legal", tagLabel: "Corporate / Legal",
+      title: "지분 5% 룰 및 자사주 매입(buyback) 이슈",
+      points: [
+        "SIE 내부 법무가 corporate term sheet 수정본을 당일 오전 회신.",
+        "개략 계산(SIE): 2,000억 원 투자 시 지분율 약 4.75% 수준. 이후 12개월 내 NC가 2,000억 원 규모 자사주 매입을 하면 지분율이 5%를 넘어가는 구조.",
+        "SIE: 2,000억 원 규모 buyback은 이력상 이례적으로 큰 규모로 보이며, 기간이 12개월로 한정되므로 양측에 유리한 구조 설계가 가능할 것으로 봄. 미공개정보 문제를 건드리지 않는 선에서 향후 12개월 buyback 규모가 그보다 작을 수 있는지 문의.",
+        "NC 답변: 현재로서는 향후 12개월 내 buyback 계획 없음. SIE이 제시한 두 가지 대안 중 두 번째 안은 오버행 문제를 해소하지 못해 수용 곤란, 첫 번째 안 포함 검토 중.",
+        "NC 역질문: 5% 초과를 피하려는 이유가 공시(보고) 부담 때문인지, 다른 이유가 있는지.",
+        "SIE 답변: 주된 이유는 (1) 보고 부담, (2) 투자와 연계되어 작성될 경우 상업계약 일부 내용이 공개될 수 있다는 리스크. 드래프팅으로 우회 가능하며 완전한 교착이 아니라면 딜 브레이커는 아님 — 모든 대안을 검토했는지 확인하려는 취지.",
+        "NC(김앤장 자문 인용): 최초 1회 보고로 끝나므로 부담이 크지 않음. 보유 주식 수 변동 없이 buyback으로 지분율만 변동하는 경우 추가 보고 불필요. 다만 1주라도 매매하면 보고 대상.",
+        "SIE: 보고 자체보다 '어느 수준까지 공개되는가'가 핵심 우려. 계약 전문 공개는 없을 것으로 보나, 상업 조건이 구체적으로 노출되는 수준이라면 수용하기 어려움."
+      ],
+      risk: "5% 초과 시 상업계약 조건의 공개 범위가 현재 남은 유일한 미결 항목. SIE은 24~36시간 내 법률자문(Kevin Chang / 김앤장) 재확인 후 입장을 확정하고 수정 corporate term sheet를 회신 예정.",
+      stance: [
+        ["NC", "보고는 1회성이므로 실질적 부담이 작다는 자문. buyback 계획도 현재 없음"],
+        ["SIE", "보고 부담보다 상업 조건 공개 범위가 핵심. 지분율은 약 4.75%에서 착지 예상"]
+      ]
+    },
+    {
+      tag: "ops", tagLabel: "Ops",
+      title: "TGS(도쿄) 참석자 확인",
+      points: [
+        "Hector는 이번에는 불참할 가능성이 높으며, 대신 다른 팀원들이 참석 예정(SIE 재확인 후 회신).",
+        "Christian은 참석할 것으로 예상되나 SI 관련 내부 일정과 겹쳐 변동 가능 — 별도 확인 후 공유."
+      ]
+    }
+  ],
+  decisions: [
+    "Commercial term sheet 초안 작성·발송 주체는 NC, 김앤장 참여, 목표 시점 금주 말~차주 초.",
+    "Corporate term sheet 수정본은 SIE이 commercial term sheet 발송 전에 먼저 회신.",
+    "특정 조건·기준은 term sheet가 아닌 long form에서 다루기로 기존 합의 유지.",
+    "Long form 진입 시점 논의는 commercial term sheet 발송 이후로 이월."
+  ],
+  actions: [
+    ["SIE", "Kevin Chang / 김앤장과 5% 초과 관련 리스크 재확인 후 입장 확정", "24~36시간 내", "open"],
+    ["SIE", "수정 corporate term sheet 회신 (commercial 발송 전)", "수일 내", "open"],
+    ["NC", "Hector–KO 통화(당일 18:00) 결과 반영해 commercial term sheet 드래프팅", "금주 말~차주 초", "open"],
+    ["NC", "SIE 제안 두 가지 안 중 1안 수용 가능성 내부 검토 (2안은 오버행 미해소로 보류)", "미정", "open"],
+    ["SIE", "TGS 도쿄 참석자(Hector·Christian) 확정 후 공유", "확인 즉시", "open"],
+    ["양측", "Term sheet 교환 완료 후 전체 타임라인 논의 착수", "term sheet 교환 후", "hold"]
+  ],
+  open: [
+    "5% 초과 시 상업계약 조건의 공시 범위 — 마지막 미결 항목으로 명시됨.",
+    "Term sheet 합의 확인 없이 long form에 바로 진입할지 여부 (절차 이견).",
+    "향후 12개월 buyback 규모에 대한 상호 확인 가능 범위 (미공개정보 제약)."
+  ],
+  quotes: [
+    ["SIE 02:05", "In our discussions with Hector … we see that as a pretty important milestone … moving straight on to long form drafting seems like a great way to spend a lot of money on lawyers."],
+    ["NC 02:56", "We are largely aligned on the terms, so some details would need to be discussed during the long form — why not just move into a long form?"],
+    ["SIE 04:16", "A 200 billion won investment would get us to about [4.]75, and it would require you to then immediately do a 200 billion won buyback in the next 12 months to then subsequently push us over five percent."],
+    ["NC 05:32", "We currently have no plans to have buybacks during the next 12 months for now."],
+    ["SIE 06:22", "Primarily the burden of filing and the potential risk that certain elements of the commercial agreement would need to be disclosed publicly."],
+    ["NC 06:59", "It's only a one time filing … even though the five percent rule fluctuates due to our buybacks, you don't have to file additional filings if you have no changes in the number of shares you are holding."],
+    ["SIE 10:54", "This is the last open item. We're gonna check with Kim & Chang in the next 24 to 36 hours and then we'll get you the revised term sheet."]
+  ],
+  caveats: [
+    "본 회의록은 Clova Note 자동 전사본을 기반으로 정리한 것으로, 화자 이름·숫자·고유명사는 전사 오류 가능성이 있음(예: 지분율 '4.75%'는 원문상 'seven five'로 표기되어 후반부 '4.75 percent' 발언을 기준으로 해석).",
+    "회의에서 언급된 5% 대량보유 보고 관련 설명은 참석자가 인용한 법률자문 내용을 그대로 기록한 것으로, 법적 결론이 아님. 실제 적용은 자문사 확인 필요.",
+    "화자 소속 구분(NC/SIE)은 발언 맥락에 따른 추정이며, 일부 발언은 소속이 명확하지 않음."
+  ]
+}
+];
+
+/* ------------------------------ 렌더링 ------------------------------ */
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const stateLabel = { open:"진행중", done:"완료", hold:"대기" };
+
+function renderMeeting(m){
+  const meta = m.meta.map(([k,v]) => `<span class="chip">${esc(k)} <b>${esc(v)}</b></span>`).join("");
+
+  const topics = m.topics.map(t => `
+    <div class="topic">
+      <h4><span class="tag ${t.tag}">${esc(t.tagLabel)}</span>${esc(t.title)}</h4>
+      <ul class="clean">${t.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul>
+      ${t.stance ? `<div class="stance">${t.stance.map(([w,s]) =>
+        `<div><strong>${esc(w)}</strong>${esc(s)}</div>`).join("")}</div>` : ""}
+      ${t.risk ? `<div class="risk">⚠ ${esc(t.risk)}</div>` : ""}
+    </div>`).join("");
+
+  const actions = m.actions.map(([who,what,due,st]) => `
+    <tr>
+      <td class="who">${esc(who)}</td>
+      <td>${esc(what)}</td>
+      <td class="due">${esc(due)}</td>
+      <td><span class="state ${st}">${stateLabel[st] || esc(st)}</span></td>
+    </tr>`).join("");
+
+  const quotes = m.quotes.map(([who,q]) =>
+    `<blockquote><b>${esc(who)}</b>“${esc(q)}”</blockquote>`).join("");
+
+  return `
+    <section class="card title-block">
+      <h2>${esc(m.title)}</h2>
+      <p class="summary">${esc(m.summary)}</p>
+      <div class="meta">${meta}</div>
+    </section>
+
+    <section class="card">
+      <h3>한눈에 보기</h3>
+      <ul class="clean">${m.headlines.map(h => `<li>${esc(h)}</li>`).join("")}</ul>
+    </section>
+
+    ${m.carryover ? `<section class="card">
+      <h3>이월 항목 (지난 회차 후속)</h3>
+      <table>
+        <thead><tr><th>항목</th><th>현재 상태</th><th>구분</th></tr></thead>
+        <tbody>${m.carryover.map(([item,note,st]) => `
+          <tr><td>${esc(item)}</td><td>${esc(note)}</td>
+          <td><span class="state ${st}">${stateLabel[st] || esc(st)}</span></td></tr>`).join("")}
+        </tbody>
+      </table>
+    </section>` : ""}
+
+    <section class="card">
+      <h3>논의 내용</h3>
+      ${topics}
+    </section>
+
+    <section class="card">
+      <h3>합의 · 결정 사항</h3>
+      <ul class="clean">${m.decisions.map(d => `<li>${esc(d)}</li>`).join("")}</ul>
+    </section>
+
+    <section class="card">
+      <h3>Action items</h3>
+      <table>
+        <thead><tr><th>담당</th><th>내용</th><th>기한</th><th>상태</th></tr></thead>
+        <tbody>${actions}</tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h3>미결 이슈</h3>
+      <ul class="clean">${m.open.map(o => `<li>${esc(o)}</li>`).join("")}</ul>
+    </section>
+
+    <section class="card">
+      <h3>원문 발췌</h3>
+      <details class="quotes"><summary>주요 발언 원문 보기</summary>${quotes}</details>
+    </section>
+
+    <section class="card">
+      <h3>기록 유의사항</h3>
+      <div class="note"><ul class="clean">${m.caveats.map(c => `<li>${esc(c)}</li>`).join("")}</ul></div>
+    </section>`;
+}
+
+function renderNav(activeId){
+  document.getElementById("weekList").innerHTML = MEETINGS.map(m => `
+    <button type="button" data-id="${esc(m.id)}" aria-current="${m.id === activeId}">
+      ${esc(m.label)}<span>${esc(m.sub)}</span>
+    </button>`).join("");
+  document.querySelectorAll("#weekList button").forEach(b => {
+    b.addEventListener("click", () => show(b.dataset.id));
+  });
+}
+
+function show(id){
+  const m = MEETINGS.find(x => x.id === id) || MEETINGS[0];
+  document.getElementById("content").innerHTML = renderMeeting(m);
+  renderNav(m.id);
+  if (location.hash.slice(1) !== m.id) history.replaceState(null, "", "#" + m.id);
+}
+
+/* 테마 토글 (저장 실패해도 동작에는 영향 없음) */
+const themeBtn = document.getElementById("themeBtn");
+try {
+  const saved = localStorage.getItem("wk-theme");
+  if (saved) document.documentElement.setAttribute("data-theme", saved);
+} catch (e) {}
+themeBtn.addEventListener("click", () => {
+  const cur = document.documentElement.getAttribute("data-theme");
+  const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+  const next = cur ? (cur === "dark" ? "light" : "dark") : (dark ? "light" : "dark");
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("wk-theme", next); } catch (e) {}
+});
+
+show(location.hash.slice(1) || MEETINGS[0].id);
+</script>
+</body>
+</html>
