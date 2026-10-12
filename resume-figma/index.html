@@ -8,7 +8,7 @@
 <style>
 :root{--ink:#111;--text:#222;--body:#333;--sub:#444;--muted:#666;--gray:#777;--light:#999;--rule:#222;--hair:#e1e1e1}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#e9e9ec;color:var(--text);font-family:Pretendard,"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
+body{background:#e9e9ec;color:var(--text);font-family:Pretendard,"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
 .pages{display:flex;flex-direction:column;align-items:center;gap:40px;padding:40px 0}
 .page{width:960px;height:1356px;background:#fff;position:relative;overflow:hidden;padding:0 80px}
 .rule{height:2px;background:var(--rule)}
@@ -53,10 +53,10 @@ i{display:block;position:absolute}
 .job-hl{flex:1}
 .job-hl li{font-size:18px;line-height:33px;color:var(--text)}
 .edu-head{margin-top:22px}
-.edu{padding-top:10.5px}
-.edu-row{display:flex;align-items:center;height:39px}
-.edu-row .d{width:415px;font-size:17px;letter-spacing:-.02em;color:var(--muted)}
-.edu-row .t{font-size:18px;font-weight:500;letter-spacing:-.02em;color:var(--text)}
+.edu{padding-top:11.5px}
+.edu-row{display:flex;align-items:flex-start;padding:8px 0}
+.edu-row .d{flex:none;width:415px;font-size:17px;line-height:23px;letter-spacing:-.02em;color:var(--muted)}
+.edu-row .t{flex:1;font-size:18px;line-height:23px;font-weight:500;letter-spacing:-.02em;color:var(--text)}
 
 /* page header (02~) */
 .page-head{padding-top:47.5px}
@@ -77,6 +77,8 @@ i{display:block;position:absolute}
 .hair+.cd-block{padding-top:31px}
 .cd-left{width:290px;flex:none}
 .cd-co{font-size:22px;line-height:30px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.cd-role{margin-top:6px;font-size:16px;line-height:22px;letter-spacing:-.02em;color:var(--sub)}
+.cd-role+.cd-period{margin-top:2px}
 .cd-period{margin-top:8.5px;font-size:18px;line-height:26px;letter-spacing:-.02em;color:var(--gray)}
 .cd-right{width:500px}
 .cd-item{padding:12px 0}

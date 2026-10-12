@@ -107,15 +107,15 @@
     <rect x="80" y="1205.5" width="800" height="2" fill="#222222"/>
   </g>
   <g id="edu-1">
-    <text id="YYYY.MM" xml:space="preserve" x="80" y="1243.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM</text>
-    <text id="OO대학교_OO학과_학사" xml:space="preserve" x="495" y="1243.59" font-size="18" font-weight="500" fill="#222222" letter-spacing="-0.36">OO대학교 OO학과 학사</text>
+    <text id="YYYY.MM" xml:space="preserve" x="80" y="1243.8" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM</text>
+    <text id="OO대학교_OO학과_학사" xml:space="preserve" x="495" y="1244.59" font-size="18" font-weight="500" fill="#222222" letter-spacing="-0.36">OO대학교 OO학과 학사</text>
   </g>
   <g id="edu-2">
-    <text id="YYYY.MM_2" xml:space="preserve" x="80" y="1282.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM</text>
-    <text id="자격증명" xml:space="preserve" x="495" y="1282.59" font-size="18" font-weight="500" fill="#222222" letter-spacing="-0.36">자격증명</text>
+    <text id="YYYY.MM_2" xml:space="preserve" x="80" y="1282.8" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM</text>
+    <text id="자격증명" xml:space="preserve" x="495" y="1283.59" font-size="18" font-weight="500" fill="#222222" letter-spacing="-0.36">자격증명</text>
   </g>
   <g id="edu-3">
-    <text id="YYYY.MM_3" xml:space="preserve" x="80" y="1321.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM</text>
-    <text id="자격증명_/_어학_점수" xml:space="preserve" x="495" y="1321.59" font-size="18" font-weight="500" fill="#222222" letter-spacing="-0.36">자격증명 / 어학 점수</text>
+    <text id="YYYY.MM_3" xml:space="preserve" x="80" y="1321.8" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM</text>
+    <text id="자격증명_/_어학_점수" xml:space="preserve" x="495" y="1322.59" font-size="18" font-weight="500" fill="#222222" letter-spacing="-0.36">자격증명 / 어학 점수</text>
   </g>
 </svg>

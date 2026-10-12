@@ -1,14 +1,16 @@
 // 이력서 템플릿 빌드 스크립트
-//   node build.mjs              → index.html + svg/ + png/ + resume.pdf
-//   node build.mjs --html-only  → index.html 만 생성
-// 내용 수정은 content.json 에서 합니다. (**굵게** 표기 지원)
+//   node build.mjs [content.json 경로]              → 같은 폴더에 index.html + svg/ + png/ + resume.pdf
+//   node build.mjs [content.json 경로] --html-only  → index.html 만 생성
+// 경로를 생략하면 이 폴더의 content.json 을 사용합니다. (**굵게** 표기 지원)
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRequire } from 'node:module';
 
-const DIR = path.dirname(fileURLToPath(import.meta.url));
-const data = JSON.parse(fs.readFileSync(path.join(DIR, 'content.json'), 'utf8'));
+const SRC = path.resolve(process.argv.slice(2).find(a => !a.startsWith('--')) || path.join(path.dirname(fileURLToPath(import.meta.url)), 'content.json'));
+const DIR = path.dirname(SRC);
+const data = JSON.parse(fs.readFileSync(SRC, 'utf8'));
+const L = { career: '경력', education: '교육 · 자격', strengths: '강점', careerDetail: '경력', project: '프로젝트', ...data.labels };
 
 // ---------- HTML ----------
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -16,7 +18,7 @@ const rich = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
 
 const logo = (l, size) => {
   if (l.type === 'text') {
-    return `<div class="logo logo-text" data-layer="logo" style="--s:${size}px;background:${esc(l.bg)};color:${esc(l.color)}"><span>${esc(l.text)}</span></div>`;
+    return `<div class="logo logo-text" data-layer="logo" style="--s:${size}px;background:${esc(l.bg)};color:${esc(l.color)}"><span${l.scale ? ` style="font-size:${+l.scale}em"` : ''}>${esc(l.text)}</span></div>`;
   }
   return `<div class="logo logo-bldg" data-layer="logo" style="--s:${size}px">
       <i class="b-body"></i><i class="b-win" style="left:.40em;top:.33em"></i><i class="b-win" style="left:.53em;top:.33em"></i>
@@ -37,7 +39,7 @@ const cover = () => {
   <h2 class="headline" data-layer="headline">${esc(p.headline)}</h2>
   <div class="rule" data-layer="rule"></div>
   <div class="intro" data-layer="intro">${p.intro.map(lines => `<p>${lines.map(rich).join('<br>')}</p>`).join('')}</div>
-  <div class="sec-head" data-layer="section-경력"><h3>경력</h3><span class="total">${esc(data.career.total)}</span></div>
+  <div class="sec-head" data-layer="section-경력"><h3>${esc(L.career)}</h3>${data.career.total ? `<span class="total">${esc(data.career.total)}</span>` : ''}</div>
   <div class="rule" data-layer="rule"></div>
   <div class="jobs">${data.career.rows.map((r, i) => `
     <div class="job" data-layer="job-${i + 1}">
@@ -48,16 +50,16 @@ const cover = () => {
       <ul class="job-hl">${r.highlights.map(h => `<li>${rich(h)}</li>`).join('')}</ul>
     </div>`).join('')}
   </div>
-  <div class="sec-head edu-head" data-layer="section-교육자격"><h3>교육 · 자격</h3></div>
+  <div class="sec-head edu-head" data-layer="section-교육자격"><h3>${esc(L.education)}</h3></div>
   <div class="rule" data-layer="rule"></div>
   <div class="edu">${data.education.map((e, i) => `
-    <div class="edu-row" data-layer="edu-${i + 1}"><span class="d">${esc(e.date)}</span><span class="t">${esc(e.text)}</span></div>`).join('')}
+    <div class="edu-row" data-layer="edu-${i + 1}"><span class="d">${esc(e.date)}</span><span class="t">${rich(e.text)}</span></div>`).join('')}
   </div>
 </section>`;
 };
 
 const strengths = () => `<section class="page" data-layer="02-강점">
-  ${pageHead('강점')}
+  ${pageHead(L.strengths)}
   ${data.strengths.map((s, i) => `${i ? '<div class="hair st-hair" data-layer="divider"></div>' : ''}
   <div class="strength" data-layer="strength-${i + 1}">
     <h3 class="st-title">${esc(s.title)}</h3>
@@ -66,10 +68,10 @@ const strengths = () => `<section class="page" data-layer="02-강점">
 </section>`;
 
 const careerDetail = () => `<section class="page" data-layer="03-경력">
-  ${pageHead('경력')}
+  ${pageHead(L.careerDetail)}
   ${data.careerDetail.map((c, i) => `${i ? '<div class="hair" data-layer="divider"></div>' : ''}
   <div class="cd-block" data-layer="company-${i + 1}">
-    <div class="cd-left"><p class="cd-co">${esc(c.company)}</p><p class="cd-period">${esc(c.period)}</p></div>
+    <div class="cd-left"><p class="cd-co">${esc(c.company)}</p>${c.role ? `<p class="cd-role">${esc(c.role)}</p>` : ''}<p class="cd-period">${esc(c.period)}</p></div>
     <div class="cd-right">${c.items.map((it, j) => `${j ? '<div class="hair" data-layer="divider"></div>' : ''}
       <div class="cd-item"><p class="cd-title">${rich(it.title)}</p><p class="cd-desc">${rich(it.desc)}</p></div>`).join('')}
     </div>
@@ -85,7 +87,7 @@ const section = s => {
 };
 
 const project = (pj, i) => `<section class="page" data-layer="${String(i + 4).padStart(2, '0')}-프로젝트${i + 1}">
-  ${pageHead(`프로젝트 ${i + 1}`)}
+  ${pageHead(`${L.project} ${i + 1}`)}
   <h3 class="pj-title" data-layer="project-title">${rich(pj.title)}</h3>
   <div class="org" data-layer="org">${logo(pj.org.logo, 35)}<div><p class="org-name">${esc(pj.org.name)}</p><p class="org-period">${esc(pj.org.period)}</p></div></div>
   ${pj.sections.map((s, j) => `${j ? '<div class="hair" data-layer="divider"></div>' : ''}${section(s)}`).join('')}
@@ -94,7 +96,7 @@ const project = (pj, i) => `<section class="page" data-layer="${String(i + 4).pa
 const CSS = `
 :root{--ink:#111;--text:#222;--body:#333;--sub:#444;--muted:#666;--gray:#777;--light:#999;--rule:#222;--hair:#e1e1e1}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#e9e9ec;color:var(--text);font-family:Pretendard,"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
+body{background:#e9e9ec;color:var(--text);font-family:Pretendard,"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
 .pages{display:flex;flex-direction:column;align-items:center;gap:40px;padding:40px 0}
 .page{width:960px;height:1356px;background:#fff;position:relative;overflow:hidden;padding:0 80px}
 .rule{height:2px;background:var(--rule)}
@@ -139,10 +141,10 @@ i{display:block;position:absolute}
 .job-hl{flex:1}
 .job-hl li{font-size:18px;line-height:33px;color:var(--text)}
 .edu-head{margin-top:22px}
-.edu{padding-top:10.5px}
-.edu-row{display:flex;align-items:center;height:39px}
-.edu-row .d{width:415px;font-size:17px;letter-spacing:-.02em;color:var(--muted)}
-.edu-row .t{font-size:18px;font-weight:500;letter-spacing:-.02em;color:var(--text)}
+.edu{padding-top:11.5px}
+.edu-row{display:flex;align-items:flex-start;padding:8px 0}
+.edu-row .d{flex:none;width:415px;font-size:17px;line-height:23px;letter-spacing:-.02em;color:var(--muted)}
+.edu-row .t{flex:1;font-size:18px;line-height:23px;font-weight:500;letter-spacing:-.02em;color:var(--text)}
 
 /* page header (02~) */
 .page-head{padding-top:47.5px}
@@ -163,6 +165,8 @@ i{display:block;position:absolute}
 .hair+.cd-block{padding-top:31px}
 .cd-left{width:290px;flex:none}
 .cd-co{font-size:22px;line-height:30px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.cd-role{margin-top:6px;font-size:16px;line-height:22px;letter-spacing:-.02em;color:var(--sub)}
+.cd-role+.cd-period{margin-top:2px}
 .cd-period{margin-top:8.5px;font-size:18px;line-height:26px;letter-spacing:-.02em;color:var(--gray)}
 .cd-right{width:500px}
 .cd-item{padding:12px 0}

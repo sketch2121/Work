@@ -28,8 +28,12 @@ node build.mjs            # HTML + SVG + PNG + PDF
 node build.mjs --html-only
 ```
 
+- 다른 폴더의 내용 파일로 만들기: `node build.mjs /경로/content.json` → 결과물은 그 파일과 같은 폴더에 생성
 - `content.json`에서 `**문구**` → 굵게 표시
-- 로고: `{"type":"building"}` (기본 건물 아이콘) 또는 `{"type":"text","text":"ABC","bg":"#111111","color":"#FFFFFF"}`
+- 로고: `{"type":"building"}` (기본 건물 아이콘) 또는 `{"type":"text","text":"ABC","bg":"#111111","color":"#FFFFFF","scale":0.2}` (`scale`: 글자 크기, 원 지름 대비)
+- 섹션 이름 바꾸기: `"labels": {"career":"경력","education":"교육 · 자격","strengths":"강점","careerDetail":"경력","project":"프로젝트"}`
+- 3페이지 경력 상세에 부서·직함 줄 추가: `careerDetail[].role`
+- 교육·자격 칸은 내용이 길면 자동으로 여러 줄로 늘어남
 - SVG 좌표는 실제 렌더링 결과에서 추출하므로, 문구 길이가 바뀌어도 줄바꿈·위치가 자동 반영됩니다. (Pretendard가 설치된 환경에서 실행)
 
 ## 원본 대비 변경점
