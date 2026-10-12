@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>홍길동 이력서</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--ink:#111;--text:#222;--body:#333;--sub:#444;--muted:#666;--gray:#777;--light:#999;--rule:#222;--hair:#e1e1e1}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#e9e9ec;color:var(--text);font-family:Pretendard,"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
+.pages{display:flex;flex-direction:column;align-items:center;gap:40px;padding:40px 0}
+.page{width:960px;height:1356px;background:#fff;position:relative;overflow:hidden;padding:0 80px}
+.rule{height:2px;background:var(--rule)}
+.hair{height:1px;background:var(--hair)}
+ul{list-style:none}
+b{font-weight:700;color:var(--ink)}
+i{display:block;position:absolute}
+
+/* logos */
+.logo{width:var(--s);height:var(--s);font-size:var(--s);border-radius:50%;flex:none;position:relative;overflow:hidden}
+.logo-bldg{background:#c8e9ff}
+.logo-bldg .b-body{left:.34em;top:.24em;width:.32em;height:.50em;border-radius:.04em;background:#6f95bd}
+.logo-bldg .b-win{width:.07em;height:.07em;background:#fff}
+.logo-bldg .b-door{left:.455em;top:.60em;width:.09em;height:.14em;background:#fff}
+.logo-text{display:flex;align-items:center;justify-content:center}
+.logo-text span{font-size:.2em;font-weight:800;letter-spacing:.02em}
+
+/* 01 cover */
+.cover-head{padding-top:55px}
+.name{font-size:60px;line-height:75px;font-weight:700;letter-spacing:-.02em;color:var(--text)}
+.birth{margin-top:12px;font-size:20px;line-height:28px;color:var(--gray);letter-spacing:-.02em}
+.photo{position:absolute;left:732px;top:59px;width:137px;height:182px;border:1px solid #eee;border-radius:16px;background:#f3f4f6;overflow:hidden}
+.ph-head{left:45.5px;top:44px;width:44px;height:44px;border-radius:50%;background:#d5d9df}
+.ph-body{left:22.5px;top:100px;width:90px;height:80px;border-radius:45px 45px 0 0;background:#d5d9df}
+.headline{margin-top:77px;font-size:24px;line-height:32px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.headline+.rule{margin-top:13px}
+.intro{margin-top:13.5px}
+.intro p{font-size:18px;line-height:28px;font-weight:300;letter-spacing:-.03em;color:var(--text)}
+.intro p+p{margin-top:10px}
+.sec-head{display:flex;align-items:baseline;gap:18px;margin-top:33px}
+.sec-head h3{font-size:22px;line-height:30px;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.sec-head .total{font-size:20px;font-weight:600;letter-spacing:-.02em;color:var(--light)}
+.sec-head+.rule{margin-top:17px}
+.jobs{padding-top:11px}
+.job{display:flex;align-items:flex-start}
+.job+.job{margin-top:15px}
+.job .logo{margin-top:9px}
+.job-meta{margin-left:24px;width:325px;padding-top:2px}
+.co{font-size:20px;line-height:31px;font-weight:600;letter-spacing:-.02em;color:var(--text)}
+.role{font-size:17px;line-height:27px;letter-spacing:-.02em;color:var(--text)}
+.period{font-size:17px;line-height:27px;letter-spacing:-.02em;color:var(--muted)}
+.job-hl{flex:1}
+.job-hl li{font-size:18px;line-height:33px;color:var(--text)}
+.edu-head{margin-top:22px}
+.edu{padding-top:10.5px}
+.edu-row{display:flex;align-items:center;height:39px}
+.edu-row .d{width:415px;font-size:17px;letter-spacing:-.02em;color:var(--muted)}
+.edu-row .t{font-size:18px;font-weight:500;letter-spacing:-.02em;color:var(--text)}
+
+/* page header (02~) */
+.page-head{padding-top:47.5px}
+.page-head h2{font-size:22px;line-height:30px;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.page-head+.rule{margin-top:16.5px}
+
+/* 02 strengths */
+.strength{padding-top:25.5px}
+.st-hair{margin-top:45px}
+.st-hair+.strength{padding-top:41px}
+.st-title{font-size:22px;line-height:30px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.st-body{margin-top:16px}
+.st-body p{font-size:18px;line-height:29px;font-weight:300;letter-spacing:-.02em;color:var(--text)}
+.st-body p+p{margin-top:10px}
+
+/* 03 career detail */
+.cd-block{display:flex;padding:26px 0 32px}
+.hair+.cd-block{padding-top:31px}
+.cd-left{width:290px;flex:none}
+.cd-co{font-size:22px;line-height:30px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.cd-period{margin-top:8.5px;font-size:18px;line-height:26px;letter-spacing:-.02em;color:var(--gray)}
+.cd-right{width:500px}
+.cd-item{padding:12px 0}
+.cd-item:first-child{padding-top:0}
+.cd-item:last-child{padding-bottom:0}
+.cd-title{font-size:20px;line-height:28px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.cd-desc{margin-top:3.5px;font-size:16px;line-height:24px;letter-spacing:-.02em;color:var(--sub)}
+
+/* 04~ projects */
+.pj-title{margin-top:36px;font-size:22px;line-height:30px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.org{display:flex;align-items:center;gap:10px;margin-top:41.5px}
+.org-name{font-size:16px;line-height:22px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.org-period{font-size:14px;line-height:20px;letter-spacing:-.02em;color:var(--gray)}
+.pj-sec{padding:27.5px 0 30.5px}
+.org+.pj-sec{padding-top:19.5px}
+.pj-sec.sec-text{padding-bottom:26.5px}
+.pj-sec.sec-entities{padding-bottom:27px}
+.pj-sec h4{font-size:20px;line-height:28px;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.pj-text{margin-top:3px}
+.pj-text p{font-size:18px;line-height:27px;font-weight:300;color:var(--body)}
+.ent{margin-top:14.5px}
+.pj-sec h4+.ent{margin-top:5px}
+.ent-name{font-size:18px;line-height:27px;font-weight:300;color:var(--body)}
+.ent-desc{margin-top:5.5px;font-size:16px;line-height:24px;font-weight:600;color:var(--body)}
+.pj-list{margin-top:7px}
+.pj-list li{display:flex;font-size:18px;line-height:23px;font-weight:300;color:var(--body)}
+.pj-list .dot{flex:none;width:27px;padding-left:12px}
+
+@media print{
+  @page{size:960px 1356px;margin:0}
+  body{background:#fff}
+  .pages{padding:0;gap:0}
+  .page+.page{break-before:page}
+}
+</style>
+</head>
+<body>
+<main class="pages">
+<section class="page" data-layer="01-이력서">
+  <header class="cover-head" data-layer="profile">
+    <h1 class="name">홍길동</h1>
+    <p class="birth">1990.01.01 (만 00세)</p>
+    <div class="photo" data-layer="photo"><i class="ph-head"></i><i class="ph-body"></i></div>
+  </header>
+  <h2 class="headline" data-layer="headline">문제 정의부터 실행 설계, 이해관계자 조율, 성과 검증까지 경험한 OO 직무 인력입니다.</h2>
+  <div class="rule" data-layer="rule"></div>
+  <div class="intro" data-layer="intro"><p>거쳐온 산업과 조직 유형을 나열하고, 그 과정에서 갖춘 관점을 한 문장으로 정리합니다.</p><p>주요 경력 A·B에서 어떤 관점으로 어떤 업무를 수행했는지 적습니다. 다룬 대상을 구체적으로 씁니다.<br>담당 영역과 주도한 의사결정의 유형을 한 줄로 덧붙입니다.</p><p>이후 커리어의 전환점과, 직접 설계하고 실행한 역할을 적습니다.<br>대표 성과 1~2개를 수치 중심으로 정리합니다.</p></div>
+  <div class="sec-head" data-layer="section-경력"><h3>경력</h3><span class="total">총경력 N년</span></div>
+  <div class="rule" data-layer="rule"></div>
+  <div class="jobs">
+    <div class="job" data-layer="job-1">
+      <div class="logo logo-bldg" data-layer="logo" style="--s:45px">
+      <i class="b-body"></i><i class="b-win" style="left:.40em;top:.33em"></i><i class="b-win" style="left:.53em;top:.33em"></i>
+      <i class="b-win" style="left:.40em;top:.45em"></i><i class="b-win" style="left:.53em;top:.45em"></i>
+      <i class="b-door"></i></div>
+      <div class="job-meta">
+        <p class="co">회사명 A</p><p class="role">직무 / 직책</p><p class="period">YYYY.MM-현재 (N개월)</p>
+      </div>
+      <ul class="job-hl"><li>프로젝트 A: 핵심 성과 한 줄 요약</li><li>프로젝트 B: 담당 업무와 결과 요약</li><li>프로젝트 C: 대표 지표 한 줄 요약</li></ul>
+    </div>
+    <div class="job" data-layer="job-2">
+      <div class="logo logo-bldg" data-layer="logo" style="--s:45px">
+      <i class="b-body"></i><i class="b-win" style="left:.40em;top:.33em"></i><i class="b-win" style="left:.53em;top:.33em"></i>
+      <i class="b-win" style="left:.40em;top:.45em"></i><i class="b-win" style="left:.53em;top:.45em"></i>
+      <i class="b-door"></i></div>
+      <div class="job-meta">
+        <p class="co">회사명 B</p><p class="role">직무 / 직책</p><p class="period">YYYY.MM – YYYY.MM (N년 N개월)</p>
+      </div>
+      <ul class="job-hl"><li>팀·조직에서 맡은 역할 한 줄 요약</li><li>서비스 A: 출시·개선 성과 요약</li><li>서비스 B: 출시·개선 성과 요약</li></ul>
+    </div>
+    <div class="job" data-layer="job-3">
+      <div class="logo logo-text" data-layer="logo" style="--s:45px;background:#111111;color:#FFFFFF"><span>LOGO</span></div>
+      <div class="job-meta">
+        <p class="co">회사명 C</p><p class="role">직무 / 직책</p><p class="period">YYYY.MM – YYYY.MM (N년 N개월)</p>
+      </div>
+      <ul class="job-hl"><li>핵심 업무 범위 한 줄 요약</li><li>주도한 대표 프로젝트 한 줄 요약</li><li>의사결정 지원 경험 (예: 신사업, 조직 개편)</li><li>주요 고객·파트너 등 다룬 대상 요약</li></ul>
+    </div>
+    <div class="job" data-layer="job-4">
+      <div class="logo logo-text" data-layer="logo" style="--s:45px;background:#1428A0;color:#FFFFFF"><span>LOGO</span></div>
+      <div class="job-meta">
+        <p class="co">회사명 D</p><p class="role">직무 / 직책</p><p class="period">YYYY.MM – YYYY.MM (N년 N개월)</p>
+      </div>
+      <ul class="job-hl"><li>프로젝트 A: 문제 → 해결 → 결과 한 줄</li><li>프로젝트 B: 제약 조건과 대응 요약</li><li>협업 범위 (예: 유관 부서·계열사 조율)</li></ul>
+    </div>
+    <div class="job" data-layer="job-5">
+      <div class="logo logo-text" data-layer="logo" style="--s:45px;background:#1428A0;color:#FFFFFF"><span>LOGO</span></div>
+      <div class="job-meta">
+        <p class="co">회사명 E</p><p class="role">직무 / 직책</p><p class="period">YYYY.MM – YYYY.MM (N년 N개월)</p>
+      </div>
+      <ul class="job-hl"><li>담당 규모 (예: 00억 원 규모 운용)</li><li>대외 커뮤니케이션·보고 업무 요약</li></ul>
+    </div>
+  </div>
+  <div class="sec-head edu-head" data-layer="section-교육자격"><h3>교육 · 자격</h3></div>
+  <div class="rule" data-layer="rule"></div>
+  <div class="edu">
+    <div class="edu-row" data-layer="edu-1"><span class="d">YYYY.MM</span><span class="t">OO대학교 OO학과 학사</span></div>
+    <div class="edu-row" data-layer="edu-2"><span class="d">YYYY.MM</span><span class="t">자격증명</span></div>
+    <div class="edu-row" data-layer="edu-3"><span class="d">YYYY.MM</span><span class="t">자격증명 / 어학 점수</span></div>
+  </div>
+</section>
+<section class="page" data-layer="02-강점">
+  <div class="page-head" data-layer="page-title"><h2>강점</h2></div><div class="rule" data-layer="rule"></div>
+  
+  <div class="strength" data-layer="strength-1">
+    <h3 class="st-title">강점 1 — 핵심 역량을 '~하는 능력' 형태의 한 문장으로 적습니다</h3>
+    <div class="st-body"><p>이 강점이 드러난 경험의 맥락을 적습니다. 어느 조직에서 어떤 대상을 다루었는지 밝히고, <b>어떤 기준으로 판단하고 행동했는지 굵게 강조</b>합니다. 문장은 두 줄 안팎으로 유지합니다.</p><p>구체적 사례를 적습니다. 회사명과 프로젝트명을 밝히고, <b>핵심 행동과 결과를 수치로 강조</b>합니다. 이해관계자, 제약 조건, 내가 내린 결정을 함께 쓰면 설득력이 높아집니다.</p><p>추가 사례가 있다면 한 문단 더 적습니다. 서로 다른 조직에서의 사례를 묶으면 <b>역량이 반복해서 재현된다는 근거</b>가 됩니다. 마지막 문장은 결과로 끝맺습니다.</p></div>
+  </div><div class="hair st-hair" data-layer="divider"></div>
+  <div class="strength" data-layer="strength-2">
+    <h3 class="st-title">강점 2 — 두 번째 핵심 역량을 구체적인 한 문장으로 정의합니다</h3>
+    <div class="st-body"><p>강점의 정의를 한 번 더 풀어 씁니다. 단순한 업무 나열을 넘어 <b>이 역량이 조직에 어떤 가치를 주는지</b>를 적습니다. 판단 기준과 일하는 방식을 함께 드러냅니다.</p><p>대표 사례를 적습니다. 어떤 상황에서 누구와 일했고, <b>어떤 근거로 합의를 이끌었는지</b> 적습니다. 경영진·고객·파트너 등 상대가 분명할수록 좋습니다. 결과가 이어진 후속 의사결정까지 쓰면 맥락이 완성됩니다.</p></div>
+  </div><div class="hair st-hair" data-layer="divider"></div>
+  <div class="strength" data-layer="strength-3">
+    <h3 class="st-title">강점 3 — 활용하는 프레임워크나 방법론이 있다면 제목에 드러냅니다</h3>
+    <div class="st-body"><p>프레임워크의 구성 요소와 적용 방식을 짧게 설명합니다. <b>기존 업무와 인접 영역을 어떻게 연결하는지</b> 적으면 확장성이 드러납니다.</p><p>이 방식을 적용한 사례를 적습니다. 회사 A에서는 <b>어떤 선택지를 비교해 무엇을 결정했는지</b>, 회사 B에서는 어떤 검토 기준을 세웠는지 적습니다. 후보군 도출, 우선순위 정리 등 구체적인 산출물을 함께 언급합니다.</p></div>
+  </div>
+</section>
+<section class="page" data-layer="03-경력">
+  <div class="page-head" data-layer="page-title"><h2>경력</h2></div><div class="rule" data-layer="rule"></div>
+  
+  <div class="cd-block" data-layer="company-1">
+    <div class="cd-left"><p class="cd-co">회사명 A</p><p class="cd-period">YYYY.MM-현재</p></div>
+    <div class="cd-right">
+      <div class="cd-item"><p class="cd-title">프로젝트 A: 핵심 성과 한 줄 요약</p><p class="cd-desc">구체적인 행동과 결과를 한 줄로 설명합니다</p></div><div class="hair" data-layer="divider"></div>
+      <div class="cd-item"><p class="cd-title">프로젝트 B: 담당 업무와 결과 요약</p><p class="cd-desc">문제 상황과 내가 만든 변화를 한 줄로 설명합니다</p></div><div class="hair" data-layer="divider"></div>
+      <div class="cd-item"><p class="cd-title">프로젝트 C: 대표 지표 한 줄 요약</p><p class="cd-desc">지표의 기준과 달성 과정을 한 줄로 설명합니다</p></div>
+    </div>
+  </div><div class="hair" data-layer="divider"></div>
+  <div class="cd-block" data-layer="company-2">
+    <div class="cd-left"><p class="cd-co">회사명 B</p><p class="cd-period">YYYY.MM – YYYY.MM</p></div>
+    <div class="cd-right">
+      <div class="cd-item"><p class="cd-title">서비스 A: 출시·개선 성과 요약</p><p class="cd-desc">검증한 가설과 결과 지표를 한 줄로 설명합니다</p></div><div class="hair" data-layer="divider"></div>
+      <div class="cd-item"><p class="cd-title">서비스 B: 출시·개선 성과 요약</p><p class="cd-desc">사용자 반응과 핵심 지표를 한 줄로 설명합니다</p></div>
+    </div>
+  </div><div class="hair" data-layer="divider"></div>
+  <div class="cd-block" data-layer="company-3">
+    <div class="cd-left"><p class="cd-co">회사명 C</p><p class="cd-period">YYYY.MM – YYYY.MM</p></div>
+    <div class="cd-right">
+      <div class="cd-item"><p class="cd-title">핵심 업무 범위 한 줄 요약</p><p class="cd-desc">업무 규모를 숫자로 보여줍니다 (예: 00건 검토)</p></div><div class="hair" data-layer="divider"></div>
+      <div class="cd-item"><p class="cd-title">주도한 대표 프로젝트 요약</p><p class="cd-desc">협상·설계 등 내가 직접 주도한 부분을 적습니다</p></div><div class="hair" data-layer="divider"></div>
+      <div class="cd-item"><p class="cd-title">의사결정 지원 경험 요약</p><p class="cd-desc">어떤 결정에 어떤 근거를 제공했는지 적습니다</p></div><div class="hair" data-layer="divider"></div>
+      <div class="cd-item"><p class="cd-title">협업 및 리스크 관리 경험 요약</p><p class="cd-desc">협업 범위와 해결한 리스크를 한 줄로 적습니다</p></div>
+    </div>
+  </div><div class="hair" data-layer="divider"></div>
+  <div class="cd-block" data-layer="company-4">
+    <div class="cd-left"><p class="cd-co">회사명 D</p><p class="cd-period">YYYY.MM – YYYY.MM</p></div>
+    <div class="cd-right">
+      <div class="cd-item"><p class="cd-title">프로젝트 A: 문제 → 해결 → 결과</p><p class="cd-desc">위기 상황부터 최종 결과까지 흐름을 요약합니다</p></div><div class="hair" data-layer="divider"></div>
+      <div class="cd-item"><p class="cd-title">프로젝트 B: 제약 조건과 대응 요약</p><p class="cd-desc">제약을 돌파한 구조나 방법을 한 줄로 적습니다</p></div><div class="hair" data-layer="divider"></div>
+      <div class="cd-item"><p class="cd-title">유관 조직 협업 구조 설계</p><p class="cd-desc">시너지를 만든 협업 방식과 결과를 적습니다</p></div>
+    </div>
+  </div><div class="hair" data-layer="divider"></div>
+  <div class="cd-block" data-layer="company-5">
+    <div class="cd-left"><p class="cd-co">회사명 E</p><p class="cd-period">YYYY.MM – YYYY.MM</p></div>
+    <div class="cd-right">
+      <div class="cd-item"><p class="cd-title">담당 규모 한 줄 요약 (예: 00억 원)</p><p class="cd-desc">주요 업무와 실행 경험을 한 줄로 적습니다</p></div>
+    </div>
+  </div>
+</section>
+<section class="page" data-layer="04-프로젝트1">
+  <div class="page-head" data-layer="page-title"><h2>프로젝트 1</h2></div><div class="rule" data-layer="rule"></div>
+  <h3 class="pj-title" data-layer="project-title">프로젝트 유형 : 프로젝트 핵심 내용을 한 줄로 요약</h3>
+  <div class="org" data-layer="org"><div class="logo logo-text" data-layer="logo" style="--s:35px;background:#111111;color:#FFFFFF"><span>LOGO</span></div><div><p class="org-name">회사명 C</p><p class="org-period">YYYY.MM – YYYY.MM</p></div></div>
+  <div class="pj-sec sec-text" data-layer="sec-개요"><h4>개요</h4><div class="pj-text"><p>프로젝트의 배경과 목표를 2줄 이내로 요약합니다.</p><p>업무 나열보다 '왜 이 프로젝트가 중요했는지'를 먼저 씁니다.</p></div></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-entities" data-layer="sec-주요 고객·파트너"><h4>주요 고객·파트너</h4><div class="ent"><p class="ent-name">고객사 / 파트너명 A</p><p class="ent-desc">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</p></div><div class="ent"><p class="ent-name">고객사 / 파트너명 B</p><p class="ent-desc">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</p></div><div class="ent"><p class="ent-name">고객사 / 파트너명 C</p><p class="ent-desc">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</p></div></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-역할"><h4>역할</h4><ul class="pj-list"><li><span class="dot">·</span><span>문제 정의 및 목표 지표 설정</span></li><li><span class="dot">·</span><span>실행 계획 수립 및 일정·리소스 관리</span></li><li><span class="dot">·</span><span>이해관계자 커뮤니케이션 및 의사결정 지원</span></li><li><span class="dot">·</span><span>결과 분석 및 후속 개선안 도출</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-주요 이슈"><h4>주요 이슈</h4><ul class="pj-list"><li><span class="dot">·</span><span>프로젝트의 핵심 난관 또는 제약 조건 (시장·규제·조직)</span></li><li><span class="dot">·</span><span>성과 지표와 투입 리소스 사이의 트레이드오프</span></li><li><span class="dot">·</span><span>다수 이해관계자 간 목표 불일치</span></li><li><span class="dot">·</span><span>제한된 일정 안에 검증해야 하는 핵심 가설</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-해결 방식"><h4>해결 방식</h4><ul class="pj-list"><li><span class="dot">·</span><span>데이터·인터뷰를 바탕으로 문제의 병목 구조화</span></li><li><span class="dot">·</span><span>대안별 실행 가능성을 비교한 뒤 우선순위 결정</span></li><li><span class="dot">·</span><span>이해관계자별 이슈를 정리하고 합의 구조 설계</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-결과"><h4>결과</h4><ul class="pj-list"><li><span class="dot">·</span><span>정량 성과 1 (예: 핵심 지표 00% 개선, 00건 달성)</span></li><li><span class="dot">·</span><span>정량 성과 2 (예: 비용 00% 절감, 기간 00% 단축)</span></li></ul></div>
+</section>
+<section class="page" data-layer="05-프로젝트2">
+  <div class="page-head" data-layer="page-title"><h2>프로젝트 2</h2></div><div class="rule" data-layer="rule"></div>
+  <h3 class="pj-title" data-layer="project-title">프로젝트 유형 : 두 번째 대표 프로젝트를 한 줄로 요약</h3>
+  <div class="org" data-layer="org"><div class="logo logo-text" data-layer="logo" style="--s:35px;background:#1428A0;color:#FFFFFF"><span>LOGO</span></div><div><p class="org-name">회사명 D</p><p class="org-period">YYYY.MM – YYYY.MM</p></div></div>
+  <div class="pj-sec sec-text" data-layer="sec-개요"><h4>개요</h4><div class="pj-text"><p>프로젝트가 다룬 영역과 범위를 적습니다. 일반적인 사례와 무엇이 달랐는지, 어떤 제약 속에서 진행되었는지 적으면 난이도가 드러납니다. 단순 실행을 넘어 내가 설계한 구조나 방식이 있다면 함께 언급합니다.</p></div></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-entities" data-layer="sec-주요 고객·파트너"><h4>주요 고객·파트너</h4><div class="ent"><p class="ent-name">고객사 / 파트너명 A</p><p class="ent-desc">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</p></div><div class="ent"><p class="ent-name">고객사 / 파트너명 B</p><p class="ent-desc">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</p></div></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-역할"><h4>역할</h4><ul class="pj-list"><li><span class="dot">·</span><span>담당 업무 범위와 포트폴리오 구성</span></li><li><span class="dot">·</span><span>실사·계약 검토 등 핵심 실무</span></li><li><span class="dot">·</span><span>제약 조건을 반영한 구조 설계</span></li><li><span class="dot">·</span><span>유관 조직과의 협업 구조 조율</span></li><li><span class="dot">·</span><span>프로젝트 이후 후속 협업 지원</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-주요 이슈"><h4>주요 이슈</h4><ul class="pj-list"><li><span class="dot">·</span><span>'할지 말지'보다 '어떻게 할지'가 핵심이었던 지점</span></li><li><span class="dot">·</span><span>성과뿐 아니라 조직 간 연계 가능성도 함께 고려</span></li><li><span class="dot">·</span><span>복잡한 구조에서의 이해관계자 정렬 및 조율 병목</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-해결 방식"><h4>해결 방식</h4><ul class="pj-list"><li><span class="dot">·</span><span>맞춤형 구조 설계로 실행 불가능한 안을 실행 가능하게 전환</span></li><li><span class="dot">·</span><span>유관 조직과의 협업을 염두에 둔 구조 조율</span></li><li><span class="dot">·</span><span>협상 과정에서 특수 조건과 후속 리스크를 반영한 조항 설계</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-결과"><h4>결과</h4><ul class="pj-list"><li><span class="dot">·</span><span>정량 성과 1 (예: N년간 00건 집행)</span></li><li><span class="dot">·</span><span>정량 성과 2 (예: 연간 00건 검토 및 실행)</span></li><li><span class="dot">·</span><span>정성 성과 (예: 맞춤형 구조 설계 경험 축적)</span></li></ul></div>
+</section>
+<section class="page" data-layer="06-프로젝트3">
+  <div class="page-head" data-layer="page-title"><h2>프로젝트 3</h2></div><div class="rule" data-layer="rule"></div>
+  <h3 class="pj-title" data-layer="project-title">서비스명 출시 : 서비스 모델 검증 및 사업 방향 전환</h3>
+  <div class="org" data-layer="org"><div class="logo logo-bldg" data-layer="logo" style="--s:35px">
+      <i class="b-body"></i><i class="b-win" style="left:.40em;top:.33em"></i><i class="b-win" style="left:.53em;top:.33em"></i>
+      <i class="b-win" style="left:.40em;top:.45em"></i><i class="b-win" style="left:.53em;top:.45em"></i>
+      <i class="b-door"></i></div><div><p class="org-name">회사명 B</p><p class="org-period">YYYY.MM – YYYY.MM</p></div></div>
+  <div class="pj-sec sec-text" data-layer="sec-개요"><h4>개요</h4><div class="pj-text"><p>어떤 고객 문제를 사업 기회로 포착했는지 한 줄로 적습니다.</p><p>핵심 병목을 발견하고 어떤 방향으로 전환해 출시했는지 한 줄로 적습니다.</p></div></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-역할"><h4>역할</h4><ul class="pj-list"><li><span class="dot">·</span><span>고객 경험 분석을 기반으로 사업 기회 발굴 및 검증</span></li><li><span class="dot">·</span><span>서비스 기획 및 프로토타입 개발 추진</span></li><li><span class="dot">·</span><span>규제·운영 병목 분석 및 대안 구조 설계</span></li><li><span class="dot">·</span><span>서비스 모델 설계 및 파트너 확보 추진</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-주요 이슈"><h4>주요 이슈</h4><ul class="pj-list"><li><span class="dot">·</span><span>제품 UX보다 외부 구조(규제·정산 등)로 인한 병목</span></li><li><span class="dot">·</span><span>단일 서비스로 인한 네트워크 효과 임계점 문제</span></li><li><span class="dot">·</span><span>'좋은 제품'보다 '실행 가능한 구조'가 필요했던 상황</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-해결 방식"><h4>해결 방식</h4><ul class="pj-list"><li><span class="dot">·</span><span>약 00명 고객 인터뷰로 불편과 수요 조사</span></li><li><span class="dot">·</span><span>프로토타입 개발 및 관련 규제·인허가 구조 분석</span></li><li><span class="dot">·</span><span>샌드박스·법무 검토 등으로 실행 가능성 검토</span></li><li><span class="dot">·</span><span>기존 가설을 고수하기보다 실행 가능성을 기준으로 방향 전환</span></li><li><span class="dot">·</span><span>새 구조 기반 서비스를 설계하고 베타 테스트 진행</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-결과"><h4>결과</h4><ul class="pj-list"><li><span class="dot">·</span><span>약 00명 사용자, 00개 파트너 모집 및 베타 테스트 진행</span></li><li><span class="dot">·</span><span>구조적 병목과 임계점의 중요성을 실전에서 학습</span></li><li><span class="dot">·</span><span>시장·규제·운영을 통합적으로 고려한 전환 경험 확보</span></li></ul></div>
+</section>
+<section class="page" data-layer="07-프로젝트4">
+  <div class="page-head" data-layer="page-title"><h2>프로젝트 4</h2></div><div class="rule" data-layer="rule"></div>
+  <h3 class="pj-title" data-layer="project-title">서비스명 출시 : 반복 사용성 및 PMF 가능성 검증</h3>
+  <div class="org" data-layer="org"><div class="logo logo-bldg" data-layer="logo" style="--s:35px">
+      <i class="b-body"></i><i class="b-win" style="left:.40em;top:.33em"></i><i class="b-win" style="left:.53em;top:.33em"></i>
+      <i class="b-win" style="left:.40em;top:.45em"></i><i class="b-win" style="left:.53em;top:.45em"></i>
+      <i class="b-door"></i></div><div><p class="org-name">회사명 B</p><p class="org-period">YYYY.MM – YYYY.MM</p></div></div>
+  <div class="pj-sec sec-text" data-layer="sec-개요"><h4>개요</h4><div class="pj-text"><p>어떤 사용자 행동 변화에 주목했는지 한 줄로 적습니다.</p><p>출시한 서비스와 검증하려던 핵심 가설을 한 줄로 적습니다.</p></div></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-역할"><h4>역할</h4><ul class="pj-list"><li><span class="dot">·</span><span>서비스 컨셉 정의 및 사용자 경험 구조 설계</span></li><li><span class="dot">·</span><span>핵심 기능 및 인터랙션 구조 기획</span></li><li><span class="dot">·</span><span>MVP 출시 및 초기 사용자 확보 전략 수립</span></li><li><span class="dot">·</span><span>핵심 지표 설계 및 데이터 기반 운영 개선 리드</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-주요 이슈"><h4>주요 이슈</h4><ul class="pj-list"><li><span class="dot">·</span><span>단순 공급을 넘어선 반복 사용성과 재방문 유도</span></li><li><span class="dot">·</span><span>품질, 운영 비용, 사용자 지불 의사 간 균형 조율</span></li><li><span class="dot">·</span><span>초기 단계에서 PMF 여부를 빠르게 검증할 지표 설계</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-해결 방식"><h4>해결 방식</h4><ul class="pj-list"><li><span class="dot">·</span><span>빠르게 테스트 가능한 MVP 환경 구축</span></li><li><span class="dot">·</span><span>사용자 맥락에 맞춘 인터페이스로 설계</span></li><li><span class="dot">·</span><span>행동 데이터로 engagement, retention, CTR 지속 추적</span></li><li><span class="dot">·</span><span>확장된 환경에서 서비스 구조와 리텐션 재검증</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-결과"><h4>결과</h4><ul class="pj-list"><li><span class="dot">·</span><span>핵심 사용 지표 (예: 일 평균 사용 0~0회)</span></li><li><span class="dot">·</span><span>MVP 기준 D1 Retention 00~00%</span></li><li><span class="dot">·</span><span>핵심 전환 지표 (예: CTR 0~00%)</span></li><li><span class="dot">·</span><span>확장 버전 기준 D1 00~00%, D7 약 0%</span></li></ul></div>
+</section>
+<section class="page" data-layer="08-프로젝트5">
+  <div class="page-head" data-layer="page-title"><h2>프로젝트 5</h2></div><div class="rule" data-layer="rule"></div>
+  <h3 class="pj-title" data-layer="project-title">자문 : 프로젝트 핵심 주제를 한 줄로 요약</h3>
+  <div class="org" data-layer="org"><div class="logo logo-bldg" data-layer="logo" style="--s:35px">
+      <i class="b-body"></i><i class="b-win" style="left:.40em;top:.33em"></i><i class="b-win" style="left:.53em;top:.33em"></i>
+      <i class="b-win" style="left:.40em;top:.45em"></i><i class="b-win" style="left:.53em;top:.45em"></i>
+      <i class="b-door"></i></div><div><p class="org-name">회사명 A</p><p class="org-period">YYYY.MM-현재</p></div></div>
+  <div class="pj-sec sec-text" data-layer="sec-개요"><h4>개요</h4><div class="pj-text"><p>누구를 대상으로 어떤 주제의 프로젝트를 수행하고 있는지 적습니다. 공통적으로 어떤 문제를 풀고 있는지, 어떤 관점에서 실행 가능한 옵션을 검토하는지 적으면 역할이 분명해집니다.</p></div></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-entities" data-layer="sec-주요 고객·파트너"><h4>주요 고객·파트너</h4><div class="ent"><p class="ent-name">고객사 / 파트너명 A</p><p class="ent-desc">고객의 상황과 내가 제공한 전략·실행 지원을 한 줄로 요약합니다</p></div><div class="ent"><p class="ent-name">고객사 / 파트너명 B</p><p class="ent-desc">고객의 상황과 내가 제공한 전략·실행 지원을 한 줄로 요약합니다</p></div></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-역할"><h4>역할</h4><ul class="pj-list"><li><span class="dot">·</span><span>사업 확장 방향 및 성장 전략 수립</span></li><li><span class="dot">·</span><span>후보군 리서치 및 숏리스트 도출 지원</span></li><li><span class="dot">·</span><span>초기 접촉 및 검토 프레임 구조화</span></li><li><span class="dot">·</span><span>경영진 의사결정 지원</span></li></ul></div><div class="hair" data-layer="divider"></div><div class="pj-sec sec-bullets" data-layer="sec-결과"><h4>결과</h4><ul class="pj-list"><li><span class="dot">·</span><span>기존 사업과 인접 영역 사이의 전략적 연결 구조 정의</span></li><li><span class="dot">·</span><span>성장 전략 검토를 위한 초기 프레임 구축</span></li><li><span class="dot">·</span><span>의사결정을 위한 검토 기준과 우선순위 정리</span></li></ul></div>
+</section>
+</main>
+</body>
+</html>

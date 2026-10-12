@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1356" viewBox="0 0 960 1356" font-family="Pretendard, 'Noto Sans KR', sans-serif">
+<rect id="background" width="960" height="1356" fill="#FFFFFF"/>
+  <g id="page-title">
+    <text id="프로젝트_4" xml:space="preserve" x="80" y="70.04" font-size="22" font-weight="700" fill="#111111" letter-spacing="-0.44">프로젝트 4</text>
+  </g>
+  <g id="rule">
+    <rect x="80" y="94" width="800" height="2" fill="#222222"/>
+  </g>
+  <g id="project-title">
+    <text id="서비스명_출시_:_반복_사용성_및_PMF_가능성_검증" xml:space="preserve" x="80" y="154.54" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">서비스명 출시 : 반복 사용성 및 PMF 가능성 검증</text>
+  </g>
+  <g id="org">
+    <g id="logo">
+      <circle cx="97.5" cy="224.5" r="17.5" fill="#C8E9FF"/>
+      <rect x="91.89" y="215.39" width="11.19" height="17.5" rx="1.4" fill="#6F95BD"/>
+      <rect x="94" y="218.55" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="98.55" y="218.55" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="94" y="222.75" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="98.55" y="222.75" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="95.92" y="228" width="3.14" height="4.89" fill="#FFFFFF"/>
+    </g>
+    <text id="회사명_B" xml:space="preserve" x="125" y="219.51" font-size="16" font-weight="600" fill="#111111" letter-spacing="-0.32">회사명 B</text>
+    <text id="YYYY.MM_–_YYYY.MM" xml:space="preserve" x="125" y="240.14" font-size="14" font-weight="400" fill="#777777" letter-spacing="-0.28">YYYY.MM – YYYY.MM</text>
+  </g>
+  <g id="sec-개요">
+    <text id="개요" xml:space="preserve" x="80" y="285.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">개요</text>
+    <text id="어떤_사용자_행동_변화에_주목했는지_한_줄로_적습니다." xml:space="preserve" x="80" y="315.59" font-size="18" font-weight="300" fill="#333333">어떤 사용자 행동 변화에 주목했는지 한 줄로 적습니다.</text>
+    <text id="출시한_서비스와_검증하려던_핵심_가설을_한_줄로_적습니다." xml:space="preserve" x="80" y="342.59" font-size="18" font-weight="300" fill="#333333">출시한 서비스와 검증하려던 핵심 가설을 한 줄로 적습니다.</text>
+  </g>
+  <g id="divider">
+    <rect x="80" y="376.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-역할">
+    <text id="역할" xml:space="preserve" x="80" y="425.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">역할</text>
+    <text id="·" xml:space="preserve" x="92" y="457.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="서비스_컨셉_정의_및_사용자_경험_구조_설계" xml:space="preserve" x="107" y="457.59" font-size="18" font-weight="300" fill="#333333">서비스 컨셉 정의 및 사용자 경험 구조 설계</text>
+    <text id="·_2" xml:space="preserve" x="92" y="480.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="핵심_기능_및_인터랙션_구조_기획" xml:space="preserve" x="107" y="480.59" font-size="18" font-weight="300" fill="#333333">핵심 기능 및 인터랙션 구조 기획</text>
+    <text id="·_3" xml:space="preserve" x="92" y="503.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="MVP_출시_및_초기_사용자_확보_전략_수립" xml:space="preserve" x="107" y="503.59" font-size="18" font-weight="300" fill="#333333">MVP 출시 및 초기 사용자 확보 전략 수립</text>
+    <text id="·_4" xml:space="preserve" x="92" y="526.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="핵심_지표_설계_및_데이터_기반_운영_개선_리드" xml:space="preserve" x="107" y="526.59" font-size="18" font-weight="300" fill="#333333">핵심 지표 설계 및 데이터 기반 운영 개선 리드</text>
+  </g>
+  <g id="divider_2">
+    <rect x="80" y="562.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-주요_이슈">
+    <text id="주요_이슈" xml:space="preserve" x="80" y="611.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">주요 이슈</text>
+    <text id="·_5" xml:space="preserve" x="92" y="643.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="단순_공급을_넘어선_반복_사용성과_재방문_유도" xml:space="preserve" x="107" y="643.59" font-size="18" font-weight="300" fill="#333333">단순 공급을 넘어선 반복 사용성과 재방문 유도</text>
+    <text id="·_6" xml:space="preserve" x="92" y="666.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="품질,_운영_비용,_사용자_지불_의사_간_균형_조율" xml:space="preserve" x="107" y="666.59" font-size="18" font-weight="300" fill="#333333">품질, 운영 비용, 사용자 지불 의사 간 균형 조율</text>
+    <text id="·_7" xml:space="preserve" x="92" y="689.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="초기_단계에서_PMF_여부를_빠르게_검증할_지표_설계" xml:space="preserve" x="107" y="689.59" font-size="18" font-weight="300" fill="#333333">초기 단계에서 PMF 여부를 빠르게 검증할 지표 설계</text>
+  </g>
+  <g id="divider_3">
+    <rect x="80" y="725.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-해결_방식">
+    <text id="해결_방식" xml:space="preserve" x="80" y="774.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">해결 방식</text>
+    <text id="·_8" xml:space="preserve" x="92" y="806.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="빠르게_테스트_가능한_MVP_환경_구축" xml:space="preserve" x="107" y="806.59" font-size="18" font-weight="300" fill="#333333">빠르게 테스트 가능한 MVP 환경 구축</text>
+    <text id="·_9" xml:space="preserve" x="92" y="829.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="사용자_맥락에_맞춘_인터페이스로_설계" xml:space="preserve" x="107" y="829.59" font-size="18" font-weight="300" fill="#333333">사용자 맥락에 맞춘 인터페이스로 설계</text>
+    <text id="·_10" xml:space="preserve" x="92" y="852.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="행동_데이터로_engagement,_retention,_CTR_지속_추적" xml:space="preserve" x="107" y="852.59" font-size="18" font-weight="300" fill="#333333">행동 데이터로 engagement, retention, CTR 지속 추적</text>
+    <text id="·_11" xml:space="preserve" x="92" y="875.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="확장된_환경에서_서비스_구조와_리텐션_재검증" xml:space="preserve" x="107" y="875.59" font-size="18" font-weight="300" fill="#333333">확장된 환경에서 서비스 구조와 리텐션 재검증</text>
+  </g>
+  <g id="divider_4">
+    <rect x="80" y="911.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-결과">
+    <text id="결과" xml:space="preserve" x="80" y="960.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">결과</text>
+    <text id="·_12" xml:space="preserve" x="92" y="992.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="핵심_사용_지표_(예:_일_평균_사용_0~0회)" xml:space="preserve" x="107" y="992.59" font-size="18" font-weight="300" fill="#333333">핵심 사용 지표 (예: 일 평균 사용 0~0회)</text>
+    <text id="·_13" xml:space="preserve" x="92" y="1015.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="MVP_기준_D1_Retention_00~00%" xml:space="preserve" x="107" y="1015.59" font-size="18" font-weight="300" fill="#333333">MVP 기준 D1 Retention 00~00%</text>
+    <text id="·_14" xml:space="preserve" x="92" y="1038.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="핵심_전환_지표_(예:_CTR_0~00%)" xml:space="preserve" x="107" y="1038.59" font-size="18" font-weight="300" fill="#333333">핵심 전환 지표 (예: CTR 0~00%)</text>
+    <text id="·_15" xml:space="preserve" x="92" y="1061.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="확장_버전_기준_D1_00~00%,_D7_약_0%" xml:space="preserve" x="107" y="1061.59" font-size="18" font-weight="300" fill="#333333">확장 버전 기준 D1 00~00%, D7 약 0%</text>
+  </g>
+</svg>

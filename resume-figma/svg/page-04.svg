@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1356" viewBox="0 0 960 1356" font-family="Pretendard, 'Noto Sans KR', sans-serif">
+<rect id="background" width="960" height="1356" fill="#FFFFFF"/>
+  <g id="page-title">
+    <text id="프로젝트_1" xml:space="preserve" x="80" y="70.04" font-size="22" font-weight="700" fill="#111111" letter-spacing="-0.44">프로젝트 1</text>
+  </g>
+  <g id="rule">
+    <rect x="80" y="94" width="800" height="2" fill="#222222"/>
+  </g>
+  <g id="project-title">
+    <text id="프로젝트_유형_:_프로젝트_핵심_내용을_한_줄로_요약" xml:space="preserve" x="80" y="154.54" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">프로젝트 유형 : 프로젝트 핵심 내용을 한 줄로 요약</text>
+  </g>
+  <g id="org">
+    <g id="logo">
+      <circle cx="97.5" cy="224.5" r="17.5" fill="#111111"/>
+      <text id="LOGO" xml:space="preserve" x="87.45" y="227.11" font-size="7" font-weight="800" fill="#FFFFFF" letter-spacing="0.14">LOGO</text>
+    </g>
+    <text id="회사명_C" xml:space="preserve" x="125" y="219.51" font-size="16" font-weight="600" fill="#111111" letter-spacing="-0.32">회사명 C</text>
+    <text id="YYYY.MM_–_YYYY.MM" xml:space="preserve" x="125" y="240.14" font-size="14" font-weight="400" fill="#777777" letter-spacing="-0.28">YYYY.MM – YYYY.MM</text>
+  </g>
+  <g id="sec-개요">
+    <text id="개요" xml:space="preserve" x="80" y="285.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">개요</text>
+    <text id="프로젝트의_배경과_목표를_2줄_이내로_요약합니다." xml:space="preserve" x="80" y="315.59" font-size="18" font-weight="300" fill="#333333">프로젝트의 배경과 목표를 2줄 이내로 요약합니다.</text>
+    <text id="업무_나열보다_'왜_이_프로젝트가_중요했는지'를_먼저_씁니다." xml:space="preserve" x="80" y="342.59" font-size="18" font-weight="300" fill="#333333">업무 나열보다 '왜 이 프로젝트가 중요했는지'를 먼저 씁니다.</text>
+  </g>
+  <g id="divider">
+    <rect x="80" y="376.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-주요_고객·파트너">
+    <text id="주요_고객·파트너" xml:space="preserve" x="80" y="425.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">주요 고객·파트너</text>
+    <text id="고객사_/_파트너명_A" xml:space="preserve" x="80" y="457.59" font-size="18" font-weight="300" fill="#333333">고객사 / 파트너명 A</text>
+    <text id="해당_대상과_함께_한_일과_내_역할을_한_줄로_요약합니다" xml:space="preserve" x="80" y="487.51" font-size="16" font-weight="600" fill="#333333">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</text>
+    <text id="고객사_/_파트너명_B" xml:space="preserve" x="80" y="528.59" font-size="18" font-weight="300" fill="#333333">고객사 / 파트너명 B</text>
+    <text id="해당_대상과_함께_한_일과_내_역할을_한_줄로_요약합니다_2" xml:space="preserve" x="80" y="558.51" font-size="16" font-weight="600" fill="#333333">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</text>
+    <text id="고객사_/_파트너명_C" xml:space="preserve" x="80" y="599.59" font-size="18" font-weight="300" fill="#333333">고객사 / 파트너명 C</text>
+    <text id="해당_대상과_함께_한_일과_내_역할을_한_줄로_요약합니다_3" xml:space="preserve" x="80" y="629.51" font-size="16" font-weight="600" fill="#333333">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</text>
+  </g>
+  <g id="divider_2">
+    <rect x="80" y="663.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-역할">
+    <text id="역할" xml:space="preserve" x="80" y="712.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">역할</text>
+    <text id="·" xml:space="preserve" x="92" y="744.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="문제_정의_및_목표_지표_설정" xml:space="preserve" x="107" y="744.59" font-size="18" font-weight="300" fill="#333333">문제 정의 및 목표 지표 설정</text>
+    <text id="·_2" xml:space="preserve" x="92" y="767.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="실행_계획_수립_및_일정·리소스_관리" xml:space="preserve" x="107" y="767.59" font-size="18" font-weight="300" fill="#333333">실행 계획 수립 및 일정·리소스 관리</text>
+    <text id="·_3" xml:space="preserve" x="92" y="790.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="이해관계자_커뮤니케이션_및_의사결정_지원" xml:space="preserve" x="107" y="790.59" font-size="18" font-weight="300" fill="#333333">이해관계자 커뮤니케이션 및 의사결정 지원</text>
+    <text id="·_4" xml:space="preserve" x="92" y="813.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="결과_분석_및_후속_개선안_도출" xml:space="preserve" x="107" y="813.59" font-size="18" font-weight="300" fill="#333333">결과 분석 및 후속 개선안 도출</text>
+  </g>
+  <g id="divider_3">
+    <rect x="80" y="849.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-주요_이슈">
+    <text id="주요_이슈" xml:space="preserve" x="80" y="898.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">주요 이슈</text>
+    <text id="·_5" xml:space="preserve" x="92" y="930.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="프로젝트의_핵심_난관_또는_제약_조건_(시장·규제·조직)" xml:space="preserve" x="107" y="930.59" font-size="18" font-weight="300" fill="#333333">프로젝트의 핵심 난관 또는 제약 조건 (시장·규제·조직)</text>
+    <text id="·_6" xml:space="preserve" x="92" y="953.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="성과_지표와_투입_리소스_사이의_트레이드오프" xml:space="preserve" x="107" y="953.59" font-size="18" font-weight="300" fill="#333333">성과 지표와 투입 리소스 사이의 트레이드오프</text>
+    <text id="·_7" xml:space="preserve" x="92" y="976.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="다수_이해관계자_간_목표_불일치" xml:space="preserve" x="107" y="976.59" font-size="18" font-weight="300" fill="#333333">다수 이해관계자 간 목표 불일치</text>
+    <text id="·_8" xml:space="preserve" x="92" y="999.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="제한된_일정_안에_검증해야_하는_핵심_가설" xml:space="preserve" x="107" y="999.59" font-size="18" font-weight="300" fill="#333333">제한된 일정 안에 검증해야 하는 핵심 가설</text>
+  </g>
+  <g id="divider_4">
+    <rect x="80" y="1035.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-해결_방식">
+    <text id="해결_방식" xml:space="preserve" x="80" y="1084.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">해결 방식</text>
+    <text id="·_9" xml:space="preserve" x="92" y="1116.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="데이터·인터뷰를_바탕으로_문제의_병목_구조화" xml:space="preserve" x="107" y="1116.59" font-size="18" font-weight="300" fill="#333333">데이터·인터뷰를 바탕으로 문제의 병목 구조화</text>
+    <text id="·_10" xml:space="preserve" x="92" y="1139.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="대안별_실행_가능성을_비교한_뒤_우선순위_결정" xml:space="preserve" x="107" y="1139.59" font-size="18" font-weight="300" fill="#333333">대안별 실행 가능성을 비교한 뒤 우선순위 결정</text>
+    <text id="·_11" xml:space="preserve" x="92" y="1162.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="이해관계자별_이슈를_정리하고_합의_구조_설계" xml:space="preserve" x="107" y="1162.59" font-size="18" font-weight="300" fill="#333333">이해관계자별 이슈를 정리하고 합의 구조 설계</text>
+  </g>
+  <g id="divider_5">
+    <rect x="80" y="1198.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-결과">
+    <text id="결과" xml:space="preserve" x="80" y="1247.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">결과</text>
+    <text id="·_12" xml:space="preserve" x="92" y="1279.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="정량_성과_1_(예:_핵심_지표_00%_개선,_00건_달성)" xml:space="preserve" x="107" y="1279.59" font-size="18" font-weight="300" fill="#333333">정량 성과 1 (예: 핵심 지표 00% 개선, 00건 달성)</text>
+    <text id="·_13" xml:space="preserve" x="92" y="1302.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="정량_성과_2_(예:_비용_00%_절감,_기간_00%_단축)" xml:space="preserve" x="107" y="1302.59" font-size="18" font-weight="300" fill="#333333">정량 성과 2 (예: 비용 00% 절감, 기간 00% 단축)</text>
+  </g>
+</svg>

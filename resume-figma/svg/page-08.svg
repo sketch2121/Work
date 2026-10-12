@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1356" viewBox="0 0 960 1356" font-family="Pretendard, 'Noto Sans KR', sans-serif">
+<rect id="background" width="960" height="1356" fill="#FFFFFF"/>
+  <g id="page-title">
+    <text id="프로젝트_5" xml:space="preserve" x="80" y="70.04" font-size="22" font-weight="700" fill="#111111" letter-spacing="-0.44">프로젝트 5</text>
+  </g>
+  <g id="rule">
+    <rect x="80" y="94" width="800" height="2" fill="#222222"/>
+  </g>
+  <g id="project-title">
+    <text id="자문_:_프로젝트_핵심_주제를_한_줄로_요약" xml:space="preserve" x="80" y="154.54" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">자문 : 프로젝트 핵심 주제를 한 줄로 요약</text>
+  </g>
+  <g id="org">
+    <g id="logo">
+      <circle cx="97.5" cy="224.5" r="17.5" fill="#C8E9FF"/>
+      <rect x="91.89" y="215.39" width="11.19" height="17.5" rx="1.4" fill="#6F95BD"/>
+      <rect x="94" y="218.55" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="98.55" y="218.55" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="94" y="222.75" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="98.55" y="222.75" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="95.92" y="228" width="3.14" height="4.89" fill="#FFFFFF"/>
+    </g>
+    <text id="회사명_A" xml:space="preserve" x="125" y="219.51" font-size="16" font-weight="600" fill="#111111" letter-spacing="-0.32">회사명 A</text>
+    <text id="YYYY.MM-현재" xml:space="preserve" x="125" y="240.14" font-size="14" font-weight="400" fill="#777777" letter-spacing="-0.28">YYYY.MM-현재</text>
+  </g>
+  <g id="sec-개요">
+    <text id="개요" xml:space="preserve" x="80" y="285.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">개요</text>
+    <text id="누구를_대상으로_어떤_주제의_프로젝트를_수행하고_있는지_적습니다._공통적" xml:space="preserve" x="80" y="315.59" font-size="18" font-weight="300" fill="#333333">누구를 대상으로 어떤 주제의 프로젝트를 수행하고 있는지 적습니다. 공통적으로 어떤 문제를 풀고 있는지, 어떤 관</text>
+    <text id="점에서_실행_가능한_옵션을_검토하는지_적으면_역할이_분명해집니다." xml:space="preserve" x="80" y="342.59" font-size="18" font-weight="300" fill="#333333">점에서 실행 가능한 옵션을 검토하는지 적으면 역할이 분명해집니다.</text>
+  </g>
+  <g id="divider">
+    <rect x="80" y="376.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-주요_고객·파트너">
+    <text id="주요_고객·파트너" xml:space="preserve" x="80" y="425.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">주요 고객·파트너</text>
+    <text id="고객사_/_파트너명_A" xml:space="preserve" x="80" y="457.59" font-size="18" font-weight="300" fill="#333333">고객사 / 파트너명 A</text>
+    <text id="고객의_상황과_내가_제공한_전략·실행_지원을_한_줄로_요약합니다" xml:space="preserve" x="80" y="487.51" font-size="16" font-weight="600" fill="#333333">고객의 상황과 내가 제공한 전략·실행 지원을 한 줄로 요약합니다</text>
+    <text id="고객사_/_파트너명_B" xml:space="preserve" x="80" y="528.59" font-size="18" font-weight="300" fill="#333333">고객사 / 파트너명 B</text>
+    <text id="고객의_상황과_내가_제공한_전략·실행_지원을_한_줄로_요약합니다_2" xml:space="preserve" x="80" y="558.51" font-size="16" font-weight="600" fill="#333333">고객의 상황과 내가 제공한 전략·실행 지원을 한 줄로 요약합니다</text>
+  </g>
+  <g id="divider_2">
+    <rect x="80" y="592.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-역할">
+    <text id="역할" xml:space="preserve" x="80" y="641.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">역할</text>
+    <text id="·" xml:space="preserve" x="92" y="673.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="사업_확장_방향_및_성장_전략_수립" xml:space="preserve" x="107" y="673.59" font-size="18" font-weight="300" fill="#333333">사업 확장 방향 및 성장 전략 수립</text>
+    <text id="·_2" xml:space="preserve" x="92" y="696.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="후보군_리서치_및_숏리스트_도출_지원" xml:space="preserve" x="107" y="696.59" font-size="18" font-weight="300" fill="#333333">후보군 리서치 및 숏리스트 도출 지원</text>
+    <text id="·_3" xml:space="preserve" x="92" y="719.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="초기_접촉_및_검토_프레임_구조화" xml:space="preserve" x="107" y="719.59" font-size="18" font-weight="300" fill="#333333">초기 접촉 및 검토 프레임 구조화</text>
+    <text id="·_4" xml:space="preserve" x="92" y="742.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="경영진_의사결정_지원" xml:space="preserve" x="107" y="742.59" font-size="18" font-weight="300" fill="#333333">경영진 의사결정 지원</text>
+  </g>
+  <g id="divider_3">
+    <rect x="80" y="778.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-결과">
+    <text id="결과" xml:space="preserve" x="80" y="827.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">결과</text>
+    <text id="·_5" xml:space="preserve" x="92" y="859.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="기존_사업과_인접_영역_사이의_전략적_연결_구조_정의" xml:space="preserve" x="107" y="859.59" font-size="18" font-weight="300" fill="#333333">기존 사업과 인접 영역 사이의 전략적 연결 구조 정의</text>
+    <text id="·_6" xml:space="preserve" x="92" y="882.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="성장_전략_검토를_위한_초기_프레임_구축" xml:space="preserve" x="107" y="882.59" font-size="18" font-weight="300" fill="#333333">성장 전략 검토를 위한 초기 프레임 구축</text>
+    <text id="·_7" xml:space="preserve" x="92" y="905.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="의사결정을_위한_검토_기준과_우선순위_정리" xml:space="preserve" x="107" y="905.59" font-size="18" font-weight="300" fill="#333333">의사결정을 위한 검토 기준과 우선순위 정리</text>
+  </g>
+</svg>

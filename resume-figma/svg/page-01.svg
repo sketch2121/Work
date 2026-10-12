@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1356" viewBox="0 0 960 1356" font-family="Pretendard, 'Noto Sans KR', sans-serif">
+<rect id="background" width="960" height="1356" fill="#FFFFFF"/>
+  <g id="profile">
+    <text id="홍길동" xml:space="preserve" x="80" y="113.08" font-size="60" font-weight="700" fill="#222222" letter-spacing="-1.2">홍길동</text>
+    <text id="1990.01.01_(만_00세)" xml:space="preserve" x="80" y="162.96" font-size="20" font-weight="400" fill="#777777" letter-spacing="-0.4">1990.01.01 (만 00세)</text>
+    <g id="photo">
+      <rect x="732" y="59" width="137" height="182" rx="16" fill="#F3F4F6"/>
+      <rect x="732.5" y="59.5" width="136" height="181" rx="15.5" fill="none" stroke="#EEEEEE" stroke-width="1"/>
+      <circle cx="800.5" cy="126" r="22" fill="#D5D9DF"/>
+      <path d="M795.5 160H805.5A40 40 0 0 1 845.5 200V240H755.5V200A40 40 0 0 1 795.5 160Z" fill="#D5D9DF"/>
+    </g>
+  </g>
+  <g id="headline">
+    <text id="문제_정의부터_실행_설계,_이해관계자_조율,_성과_검증까지_경험한_OO_" xml:space="preserve" x="80" y="270.91" font-size="24" font-weight="600" fill="#111111" letter-spacing="-0.48">문제 정의부터 실행 설계, 이해관계자 조율, 성과 검증까지 경험한 OO 직무 인력입니다.</text>
+  </g>
+  <g id="rule">
+    <rect x="80" y="292" width="800" height="2" fill="#222222"/>
+  </g>
+  <g id="intro">
+    <text id="거쳐온_산업과_조직_유형을_나열하고,_그_과정에서_갖춘_관점을_한_문장으" xml:space="preserve" x="80" y="327.09" font-size="18" font-weight="300" fill="#222222" letter-spacing="-0.54">거쳐온 산업과 조직 유형을 나열하고, 그 과정에서 갖춘 관점을 한 문장으로 정리합니다.</text>
+    <text id="주요_경력_A·B에서_어떤_관점으로_어떤_업무를_수행했는지_적습니다._다" xml:space="preserve" x="80" y="365.09" font-size="18" font-weight="300" fill="#222222" letter-spacing="-0.54">주요 경력 A·B에서 어떤 관점으로 어떤 업무를 수행했는지 적습니다. 다룬 대상을 구체적으로 씁니다.</text>
+    <text id="담당_영역과_주도한_의사결정의_유형을_한_줄로_덧붙입니다." xml:space="preserve" x="80" y="393.09" font-size="18" font-weight="300" fill="#222222" letter-spacing="-0.54">담당 영역과 주도한 의사결정의 유형을 한 줄로 덧붙입니다.</text>
+    <text id="이후_커리어의_전환점과,_직접_설계하고_실행한_역할을_적습니다." xml:space="preserve" x="80" y="431.09" font-size="18" font-weight="300" fill="#222222" letter-spacing="-0.54">이후 커리어의 전환점과, 직접 설계하고 실행한 역할을 적습니다.</text>
+    <text id="대표_성과_1~2개를_수치_중심으로_정리합니다." xml:space="preserve" x="80" y="459.09" font-size="18" font-weight="300" fill="#222222" letter-spacing="-0.54">대표 성과 1~2개를 수치 중심으로 정리합니다.</text>
+  </g>
+  <g id="section-경력">
+    <text id="경력" xml:space="preserve" x="80" y="523.04" font-size="22" font-weight="700" fill="#111111" letter-spacing="-0.44">경력</text>
+    <text id="총경력_N년" xml:space="preserve" x="135.16" y="522.46" font-size="20" font-weight="600" fill="#999999" letter-spacing="-0.4">총경력 N년</text>
+  </g>
+  <g id="rule_2">
+    <rect x="80" y="547.5" width="800" height="2" fill="#222222"/>
+  </g>
+  <g id="job-1">
+    <g id="logo">
+      <circle cx="102.5" cy="592" r="22.5" fill="#C8E9FF"/>
+      <rect x="95.3" y="580.3" width="14.39" height="22.5" rx="1.8" fill="#6F95BD"/>
+      <rect x="98" y="584.34" width="3.14" height="3.14" fill="#FFFFFF"/>
+      <rect x="103.84" y="584.34" width="3.14" height="3.14" fill="#FFFFFF"/>
+      <rect x="98" y="589.75" width="3.14" height="3.14" fill="#FFFFFF"/>
+      <rect x="103.84" y="589.75" width="3.14" height="3.14" fill="#FFFFFF"/>
+      <rect x="100.47" y="596.5" width="4.05" height="6.3" fill="#FFFFFF"/>
+    </g>
+    <text id="회사명_A" xml:space="preserve" x="149" y="584.46" font-size="20" font-weight="600" fill="#222222" letter-spacing="-0.4">회사명 A</text>
+    <text id="직무_/_직책" xml:space="preserve" x="149" y="612.3" font-size="17" font-weight="400" fill="#222222" letter-spacing="-0.34">직무 / 직책</text>
+    <text id="YYYY.MM-현재_(N개월)" xml:space="preserve" x="149" y="639.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM-현재 (N개월)</text>
+    <text id="프로젝트_A:_핵심_성과_한_줄_요약" xml:space="preserve" x="474" y="583.09" font-size="18" font-weight="400" fill="#222222">프로젝트 A: 핵심 성과 한 줄 요약</text>
+    <text id="프로젝트_B:_담당_업무와_결과_요약" xml:space="preserve" x="474" y="616.09" font-size="18" font-weight="400" fill="#222222">프로젝트 B: 담당 업무와 결과 요약</text>
+    <text id="프로젝트_C:_대표_지표_한_줄_요약" xml:space="preserve" x="474" y="649.09" font-size="18" font-weight="400" fill="#222222">프로젝트 C: 대표 지표 한 줄 요약</text>
+  </g>
+  <g id="job-2">
+    <g id="logo_2">
+      <circle cx="102.5" cy="706" r="22.5" fill="#C8E9FF"/>
+      <rect x="95.3" y="694.3" width="14.39" height="22.5" rx="1.8" fill="#6F95BD"/>
+      <rect x="98" y="698.34" width="3.14" height="3.14" fill="#FFFFFF"/>
+      <rect x="103.84" y="698.34" width="3.14" height="3.14" fill="#FFFFFF"/>
+      <rect x="98" y="703.75" width="3.14" height="3.14" fill="#FFFFFF"/>
+      <rect x="103.84" y="703.75" width="3.14" height="3.14" fill="#FFFFFF"/>
+      <rect x="100.47" y="710.5" width="4.05" height="6.3" fill="#FFFFFF"/>
+    </g>
+    <text id="회사명_B" xml:space="preserve" x="149" y="698.46" font-size="20" font-weight="600" fill="#222222" letter-spacing="-0.4">회사명 B</text>
+    <text id="직무_/_직책_2" xml:space="preserve" x="149" y="726.3" font-size="17" font-weight="400" fill="#222222" letter-spacing="-0.34">직무 / 직책</text>
+    <text id="YYYY.MM_–_YYYY.MM_(N년_N개월)" xml:space="preserve" x="149" y="753.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM – YYYY.MM (N년 N개월)</text>
+    <text id="팀·조직에서_맡은_역할_한_줄_요약" xml:space="preserve" x="474" y="697.09" font-size="18" font-weight="400" fill="#222222">팀·조직에서 맡은 역할 한 줄 요약</text>
+    <text id="서비스_A:_출시·개선_성과_요약" xml:space="preserve" x="474" y="730.09" font-size="18" font-weight="400" fill="#222222">서비스 A: 출시·개선 성과 요약</text>
+    <text id="서비스_B:_출시·개선_성과_요약" xml:space="preserve" x="474" y="763.09" font-size="18" font-weight="400" fill="#222222">서비스 B: 출시·개선 성과 요약</text>
+  </g>
+  <g id="job-3">
+    <g id="logo_3">
+      <circle cx="102.5" cy="820" r="22.5" fill="#111111"/>
+      <text id="LOGO" xml:space="preserve" x="89.59" y="823.19" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="0.18">LOGO</text>
+    </g>
+    <text id="회사명_C" xml:space="preserve" x="149" y="812.46" font-size="20" font-weight="600" fill="#222222" letter-spacing="-0.4">회사명 C</text>
+    <text id="직무_/_직책_3" xml:space="preserve" x="149" y="840.3" font-size="17" font-weight="400" fill="#222222" letter-spacing="-0.34">직무 / 직책</text>
+    <text id="YYYY.MM_–_YYYY.MM_(N년_N개월)_2" xml:space="preserve" x="149" y="867.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM – YYYY.MM (N년 N개월)</text>
+    <text id="핵심_업무_범위_한_줄_요약" xml:space="preserve" x="474" y="811.09" font-size="18" font-weight="400" fill="#222222">핵심 업무 범위 한 줄 요약</text>
+    <text id="주도한_대표_프로젝트_한_줄_요약" xml:space="preserve" x="474" y="844.09" font-size="18" font-weight="400" fill="#222222">주도한 대표 프로젝트 한 줄 요약</text>
+    <text id="의사결정_지원_경험_(예:_신사업,_조직_개편)" xml:space="preserve" x="474" y="877.09" font-size="18" font-weight="400" fill="#222222">의사결정 지원 경험 (예: 신사업, 조직 개편)</text>
+    <text id="주요_고객·파트너_등_다룬_대상_요약" xml:space="preserve" x="474" y="910.09" font-size="18" font-weight="400" fill="#222222">주요 고객·파트너 등 다룬 대상 요약</text>
+  </g>
+  <g id="job-4">
+    <g id="logo_4">
+      <circle cx="102.5" cy="967" r="22.5" fill="#1428A0"/>
+      <text id="LOGO_2" xml:space="preserve" x="89.59" y="970.19" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="0.18">LOGO</text>
+    </g>
+    <text id="회사명_D" xml:space="preserve" x="149" y="959.46" font-size="20" font-weight="600" fill="#222222" letter-spacing="-0.4">회사명 D</text>
+    <text id="직무_/_직책_4" xml:space="preserve" x="149" y="987.3" font-size="17" font-weight="400" fill="#222222" letter-spacing="-0.34">직무 / 직책</text>
+    <text id="YYYY.MM_–_YYYY.MM_(N년_N개월)_3" xml:space="preserve" x="149" y="1014.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM – YYYY.MM (N년 N개월)</text>
+    <text id="프로젝트_A:_문제_→_해결_→_결과_한_줄" xml:space="preserve" x="474" y="958.09" font-size="18" font-weight="400" fill="#222222">프로젝트 A: 문제 → 해결 → 결과 한 줄</text>
+    <text id="프로젝트_B:_제약_조건과_대응_요약" xml:space="preserve" x="474" y="991.09" font-size="18" font-weight="400" fill="#222222">프로젝트 B: 제약 조건과 대응 요약</text>
+    <text id="협업_범위_(예:_유관_부서·계열사_조율)" xml:space="preserve" x="474" y="1024.09" font-size="18" font-weight="400" fill="#222222">협업 범위 (예: 유관 부서·계열사 조율)</text>
+  </g>
+  <g id="job-5">
+    <g id="logo_5">
+      <circle cx="102.5" cy="1081" r="22.5" fill="#1428A0"/>
+      <text id="LOGO_3" xml:space="preserve" x="89.59" y="1084.19" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="0.18">LOGO</text>
+    </g>
+    <text id="회사명_E" xml:space="preserve" x="149" y="1073.46" font-size="20" font-weight="600" fill="#222222" letter-spacing="-0.4">회사명 E</text>
+    <text id="직무_/_직책_5" xml:space="preserve" x="149" y="1101.3" font-size="17" font-weight="400" fill="#222222" letter-spacing="-0.34">직무 / 직책</text>
+    <text id="YYYY.MM_–_YYYY.MM_(N년_N개월)_4" xml:space="preserve" x="149" y="1128.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM – YYYY.MM (N년 N개월)</text>
+    <text id="담당_규모_(예:_00억_원_규모_운용)" xml:space="preserve" x="474" y="1072.09" font-size="18" font-weight="400" fill="#222222">담당 규모 (예: 00억 원 규모 운용)</text>
+    <text id="대외_커뮤니케이션·보고_업무_요약" xml:space="preserve" x="474" y="1105.09" font-size="18" font-weight="400" fill="#222222">대외 커뮤니케이션·보고 업무 요약</text>
+  </g>
+  <g id="section-교육자격">
+    <text id="교육_·_자격" xml:space="preserve" x="80" y="1181.04" font-size="22" font-weight="700" fill="#111111" letter-spacing="-0.44">교육 · 자격</text>
+  </g>
+  <g id="rule_3">
+    <rect x="80" y="1205.5" width="800" height="2" fill="#222222"/>
+  </g>
+  <g id="edu-1">
+    <text id="YYYY.MM" xml:space="preserve" x="80" y="1243.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM</text>
+    <text id="OO대학교_OO학과_학사" xml:space="preserve" x="495" y="1243.59" font-size="18" font-weight="500" fill="#222222" letter-spacing="-0.36">OO대학교 OO학과 학사</text>
+  </g>
+  <g id="edu-2">
+    <text id="YYYY.MM_2" xml:space="preserve" x="80" y="1282.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM</text>
+    <text id="자격증명" xml:space="preserve" x="495" y="1282.59" font-size="18" font-weight="500" fill="#222222" letter-spacing="-0.36">자격증명</text>
+  </g>
+  <g id="edu-3">
+    <text id="YYYY.MM_3" xml:space="preserve" x="80" y="1321.3" font-size="17" font-weight="400" fill="#666666" letter-spacing="-0.34">YYYY.MM</text>
+    <text id="자격증명_/_어학_점수" xml:space="preserve" x="495" y="1321.59" font-size="18" font-weight="500" fill="#222222" letter-spacing="-0.36">자격증명 / 어학 점수</text>
+  </g>
+</svg>

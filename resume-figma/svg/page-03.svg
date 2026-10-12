@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1356" viewBox="0 0 960 1356" font-family="Pretendard, 'Noto Sans KR', sans-serif">
+<rect id="background" width="960" height="1356" fill="#FFFFFF"/>
+  <g id="page-title">
+    <text id="경력" xml:space="preserve" x="80" y="70.04" font-size="22" font-weight="700" fill="#111111" letter-spacing="-0.44">경력</text>
+  </g>
+  <g id="rule">
+    <rect x="80" y="94" width="800" height="2" fill="#222222"/>
+  </g>
+  <g id="company-1">
+    <text id="회사명_A" xml:space="preserve" x="80" y="144.54" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">회사명 A</text>
+    <text id="YYYY.MM-현재" xml:space="preserve" x="80" y="179.09" font-size="18" font-weight="400" fill="#777777" letter-spacing="-0.36">YYYY.MM-현재</text>
+    <text id="프로젝트_A:_핵심_성과_한_줄_요약" xml:space="preserve" x="370" y="142.96" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">프로젝트 A: 핵심 성과 한 줄 요약</text>
+    <text id="구체적인_행동과_결과를_한_줄로_설명합니다" xml:space="preserve" x="370" y="170.51" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">구체적인 행동과 결과를 한 줄로 설명합니다</text>
+    <g id="divider">
+      <rect x="370" y="189.5" width="500" height="1" fill="#E1E1E1"/>
+    </g>
+    <text id="프로젝트_B:_담당_업무와_결과_요약" xml:space="preserve" x="370" y="223.46" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">프로젝트 B: 담당 업무와 결과 요약</text>
+    <text id="문제_상황과_내가_만든_변화를_한_줄로_설명합니다" xml:space="preserve" x="370" y="251.01" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">문제 상황과 내가 만든 변화를 한 줄로 설명합니다</text>
+    <g id="divider_2">
+      <rect x="370" y="270" width="500" height="1" fill="#E1E1E1"/>
+    </g>
+    <text id="프로젝트_C:_대표_지표_한_줄_요약" xml:space="preserve" x="370" y="303.96" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">프로젝트 C: 대표 지표 한 줄 요약</text>
+    <text id="지표의_기준과_달성_과정을_한_줄로_설명합니다" xml:space="preserve" x="370" y="331.51" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">지표의 기준과 달성 과정을 한 줄로 설명합니다</text>
+  </g>
+  <g id="divider_3">
+    <rect x="80" y="370.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="company-2">
+    <text id="회사명_B" xml:space="preserve" x="80" y="425.04" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">회사명 B</text>
+    <text id="YYYY.MM_–_YYYY.MM" xml:space="preserve" x="80" y="459.59" font-size="18" font-weight="400" fill="#777777" letter-spacing="-0.36">YYYY.MM – YYYY.MM</text>
+    <text id="서비스_A:_출시·개선_성과_요약" xml:space="preserve" x="370" y="423.46" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">서비스 A: 출시·개선 성과 요약</text>
+    <text id="검증한_가설과_결과_지표를_한_줄로_설명합니다" xml:space="preserve" x="370" y="451.01" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">검증한 가설과 결과 지표를 한 줄로 설명합니다</text>
+    <g id="divider_4">
+      <rect x="370" y="470" width="500" height="1" fill="#E1E1E1"/>
+    </g>
+    <text id="서비스_B:_출시·개선_성과_요약" xml:space="preserve" x="370" y="503.96" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">서비스 B: 출시·개선 성과 요약</text>
+    <text id="사용자_반응과_핵심_지표를_한_줄로_설명합니다" xml:space="preserve" x="370" y="531.51" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">사용자 반응과 핵심 지표를 한 줄로 설명합니다</text>
+  </g>
+  <g id="divider_5">
+    <rect x="80" y="570.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="company-3">
+    <text id="회사명_C" xml:space="preserve" x="80" y="625.04" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">회사명 C</text>
+    <text id="YYYY.MM_–_YYYY.MM_2" xml:space="preserve" x="80" y="659.59" font-size="18" font-weight="400" fill="#777777" letter-spacing="-0.36">YYYY.MM – YYYY.MM</text>
+    <text id="핵심_업무_범위_한_줄_요약" xml:space="preserve" x="370" y="623.46" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">핵심 업무 범위 한 줄 요약</text>
+    <text id="업무_규모를_숫자로_보여줍니다_(예:_00건_검토)" xml:space="preserve" x="370" y="651.01" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">업무 규모를 숫자로 보여줍니다 (예: 00건 검토)</text>
+    <g id="divider_6">
+      <rect x="370" y="670" width="500" height="1" fill="#E1E1E1"/>
+    </g>
+    <text id="주도한_대표_프로젝트_요약" xml:space="preserve" x="370" y="703.96" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">주도한 대표 프로젝트 요약</text>
+    <text id="협상·설계_등_내가_직접_주도한_부분을_적습니다" xml:space="preserve" x="370" y="731.51" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">협상·설계 등 내가 직접 주도한 부분을 적습니다</text>
+    <g id="divider_7">
+      <rect x="370" y="750.5" width="500" height="1" fill="#E1E1E1"/>
+    </g>
+    <text id="의사결정_지원_경험_요약" xml:space="preserve" x="370" y="784.46" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">의사결정 지원 경험 요약</text>
+    <text id="어떤_결정에_어떤_근거를_제공했는지_적습니다" xml:space="preserve" x="370" y="812.01" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">어떤 결정에 어떤 근거를 제공했는지 적습니다</text>
+    <g id="divider_8">
+      <rect x="370" y="831" width="500" height="1" fill="#E1E1E1"/>
+    </g>
+    <text id="협업_및_리스크_관리_경험_요약" xml:space="preserve" x="370" y="864.96" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">협업 및 리스크 관리 경험 요약</text>
+    <text id="협업_범위와_해결한_리스크를_한_줄로_적습니다" xml:space="preserve" x="370" y="892.51" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">협업 범위와 해결한 리스크를 한 줄로 적습니다</text>
+  </g>
+  <g id="divider_9">
+    <rect x="80" y="931.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="company-4">
+    <text id="회사명_D" xml:space="preserve" x="80" y="986.04" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">회사명 D</text>
+    <text id="YYYY.MM_–_YYYY.MM_3" xml:space="preserve" x="80" y="1020.59" font-size="18" font-weight="400" fill="#777777" letter-spacing="-0.36">YYYY.MM – YYYY.MM</text>
+    <text id="프로젝트_A:_문제_→_해결_→_결과" xml:space="preserve" x="370" y="984.46" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">프로젝트 A: 문제 → 해결 → 결과</text>
+    <text id="위기_상황부터_최종_결과까지_흐름을_요약합니다" xml:space="preserve" x="370" y="1012.01" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">위기 상황부터 최종 결과까지 흐름을 요약합니다</text>
+    <g id="divider_10">
+      <rect x="370" y="1031" width="500" height="1" fill="#E1E1E1"/>
+    </g>
+    <text id="프로젝트_B:_제약_조건과_대응_요약" xml:space="preserve" x="370" y="1064.96" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">프로젝트 B: 제약 조건과 대응 요약</text>
+    <text id="제약을_돌파한_구조나_방법을_한_줄로_적습니다" xml:space="preserve" x="370" y="1092.51" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">제약을 돌파한 구조나 방법을 한 줄로 적습니다</text>
+    <g id="divider_11">
+      <rect x="370" y="1111.5" width="500" height="1" fill="#E1E1E1"/>
+    </g>
+    <text id="유관_조직_협업_구조_설계" xml:space="preserve" x="370" y="1145.46" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">유관 조직 협업 구조 설계</text>
+    <text id="시너지를_만든_협업_방식과_결과를_적습니다" xml:space="preserve" x="370" y="1173.01" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">시너지를 만든 협업 방식과 결과를 적습니다</text>
+  </g>
+  <g id="divider_12">
+    <rect x="80" y="1212" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="company-5">
+    <text id="회사명_E" xml:space="preserve" x="80" y="1266.54" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">회사명 E</text>
+    <text id="YYYY.MM_–_YYYY.MM_4" xml:space="preserve" x="80" y="1301.09" font-size="18" font-weight="400" fill="#777777" letter-spacing="-0.36">YYYY.MM – YYYY.MM</text>
+    <text id="담당_규모_한_줄_요약_(예:_00억_원)" xml:space="preserve" x="370" y="1264.96" font-size="20" font-weight="600" fill="#111111" letter-spacing="-0.4">담당 규모 한 줄 요약 (예: 00억 원)</text>
+    <text id="주요_업무와_실행_경험을_한_줄로_적습니다" xml:space="preserve" x="370" y="1292.51" font-size="16" font-weight="400" fill="#444444" letter-spacing="-0.32">주요 업무와 실행 경험을 한 줄로 적습니다</text>
+  </g>
+</svg>

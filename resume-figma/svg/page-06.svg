@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1356" viewBox="0 0 960 1356" font-family="Pretendard, 'Noto Sans KR', sans-serif">
+<rect id="background" width="960" height="1356" fill="#FFFFFF"/>
+  <g id="page-title">
+    <text id="프로젝트_3" xml:space="preserve" x="80" y="70.04" font-size="22" font-weight="700" fill="#111111" letter-spacing="-0.44">프로젝트 3</text>
+  </g>
+  <g id="rule">
+    <rect x="80" y="94" width="800" height="2" fill="#222222"/>
+  </g>
+  <g id="project-title">
+    <text id="서비스명_출시_:_서비스_모델_검증_및_사업_방향_전환" xml:space="preserve" x="80" y="154.54" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">서비스명 출시 : 서비스 모델 검증 및 사업 방향 전환</text>
+  </g>
+  <g id="org">
+    <g id="logo">
+      <circle cx="97.5" cy="224.5" r="17.5" fill="#C8E9FF"/>
+      <rect x="91.89" y="215.39" width="11.19" height="17.5" rx="1.4" fill="#6F95BD"/>
+      <rect x="94" y="218.55" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="98.55" y="218.55" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="94" y="222.75" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="98.55" y="222.75" width="2.44" height="2.44" fill="#FFFFFF"/>
+      <rect x="95.92" y="228" width="3.14" height="4.89" fill="#FFFFFF"/>
+    </g>
+    <text id="회사명_B" xml:space="preserve" x="125" y="219.51" font-size="16" font-weight="600" fill="#111111" letter-spacing="-0.32">회사명 B</text>
+    <text id="YYYY.MM_–_YYYY.MM" xml:space="preserve" x="125" y="240.14" font-size="14" font-weight="400" fill="#777777" letter-spacing="-0.28">YYYY.MM – YYYY.MM</text>
+  </g>
+  <g id="sec-개요">
+    <text id="개요" xml:space="preserve" x="80" y="285.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">개요</text>
+    <text id="어떤_고객_문제를_사업_기회로_포착했는지_한_줄로_적습니다." xml:space="preserve" x="80" y="315.59" font-size="18" font-weight="300" fill="#333333">어떤 고객 문제를 사업 기회로 포착했는지 한 줄로 적습니다.</text>
+    <text id="핵심_병목을_발견하고_어떤_방향으로_전환해_출시했는지_한_줄로_적습니다." xml:space="preserve" x="80" y="342.59" font-size="18" font-weight="300" fill="#333333">핵심 병목을 발견하고 어떤 방향으로 전환해 출시했는지 한 줄로 적습니다.</text>
+  </g>
+  <g id="divider">
+    <rect x="80" y="376.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-역할">
+    <text id="역할" xml:space="preserve" x="80" y="425.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">역할</text>
+    <text id="·" xml:space="preserve" x="92" y="457.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="고객_경험_분석을_기반으로_사업_기회_발굴_및_검증" xml:space="preserve" x="107" y="457.59" font-size="18" font-weight="300" fill="#333333">고객 경험 분석을 기반으로 사업 기회 발굴 및 검증</text>
+    <text id="·_2" xml:space="preserve" x="92" y="480.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="서비스_기획_및_프로토타입_개발_추진" xml:space="preserve" x="107" y="480.59" font-size="18" font-weight="300" fill="#333333">서비스 기획 및 프로토타입 개발 추진</text>
+    <text id="·_3" xml:space="preserve" x="92" y="503.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="규제·운영_병목_분석_및_대안_구조_설계" xml:space="preserve" x="107" y="503.59" font-size="18" font-weight="300" fill="#333333">규제·운영 병목 분석 및 대안 구조 설계</text>
+    <text id="·_4" xml:space="preserve" x="92" y="526.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="서비스_모델_설계_및_파트너_확보_추진" xml:space="preserve" x="107" y="526.59" font-size="18" font-weight="300" fill="#333333">서비스 모델 설계 및 파트너 확보 추진</text>
+  </g>
+  <g id="divider_2">
+    <rect x="80" y="562.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-주요_이슈">
+    <text id="주요_이슈" xml:space="preserve" x="80" y="611.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">주요 이슈</text>
+    <text id="·_5" xml:space="preserve" x="92" y="643.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="제품_UX보다_외부_구조(규제·정산_등)로_인한_병목" xml:space="preserve" x="107" y="643.59" font-size="18" font-weight="300" fill="#333333">제품 UX보다 외부 구조(규제·정산 등)로 인한 병목</text>
+    <text id="·_6" xml:space="preserve" x="92" y="666.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="단일_서비스로_인한_네트워크_효과_임계점_문제" xml:space="preserve" x="107" y="666.59" font-size="18" font-weight="300" fill="#333333">단일 서비스로 인한 네트워크 효과 임계점 문제</text>
+    <text id="·_7" xml:space="preserve" x="92" y="689.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="'좋은_제품'보다_'실행_가능한_구조'가_필요했던_상황" xml:space="preserve" x="107" y="689.59" font-size="18" font-weight="300" fill="#333333">'좋은 제품'보다 '실행 가능한 구조'가 필요했던 상황</text>
+  </g>
+  <g id="divider_3">
+    <rect x="80" y="725.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-해결_방식">
+    <text id="해결_방식" xml:space="preserve" x="80" y="774.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">해결 방식</text>
+    <text id="·_8" xml:space="preserve" x="92" y="806.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="약_00명_고객_인터뷰로_불편과_수요_조사" xml:space="preserve" x="107" y="806.59" font-size="18" font-weight="300" fill="#333333">약 00명 고객 인터뷰로 불편과 수요 조사</text>
+    <text id="·_9" xml:space="preserve" x="92" y="829.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="프로토타입_개발_및_관련_규제·인허가_구조_분석" xml:space="preserve" x="107" y="829.59" font-size="18" font-weight="300" fill="#333333">프로토타입 개발 및 관련 규제·인허가 구조 분석</text>
+    <text id="·_10" xml:space="preserve" x="92" y="852.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="샌드박스·법무_검토_등으로_실행_가능성_검토" xml:space="preserve" x="107" y="852.59" font-size="18" font-weight="300" fill="#333333">샌드박스·법무 검토 등으로 실행 가능성 검토</text>
+    <text id="·_11" xml:space="preserve" x="92" y="875.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="기존_가설을_고수하기보다_실행_가능성을_기준으로_방향_전환" xml:space="preserve" x="107" y="875.59" font-size="18" font-weight="300" fill="#333333">기존 가설을 고수하기보다 실행 가능성을 기준으로 방향 전환</text>
+    <text id="·_12" xml:space="preserve" x="92" y="898.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="새_구조_기반_서비스를_설계하고_베타_테스트_진행" xml:space="preserve" x="107" y="898.59" font-size="18" font-weight="300" fill="#333333">새 구조 기반 서비스를 설계하고 베타 테스트 진행</text>
+  </g>
+  <g id="divider_4">
+    <rect x="80" y="934.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-결과">
+    <text id="결과" xml:space="preserve" x="80" y="983.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">결과</text>
+    <text id="·_13" xml:space="preserve" x="92" y="1015.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="약_00명_사용자,_00개_파트너_모집_및_베타_테스트_진행" xml:space="preserve" x="107" y="1015.59" font-size="18" font-weight="300" fill="#333333">약 00명 사용자, 00개 파트너 모집 및 베타 테스트 진행</text>
+    <text id="·_14" xml:space="preserve" x="92" y="1038.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="구조적_병목과_임계점의_중요성을_실전에서_학습" xml:space="preserve" x="107" y="1038.59" font-size="18" font-weight="300" fill="#333333">구조적 병목과 임계점의 중요성을 실전에서 학습</text>
+    <text id="·_15" xml:space="preserve" x="92" y="1061.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="시장·규제·운영을_통합적으로_고려한_전환_경험_확보" xml:space="preserve" x="107" y="1061.59" font-size="18" font-weight="300" fill="#333333">시장·규제·운영을 통합적으로 고려한 전환 경험 확보</text>
+  </g>
+</svg>

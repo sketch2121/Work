@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1356" viewBox="0 0 960 1356" font-family="Pretendard, 'Noto Sans KR', sans-serif">
+<rect id="background" width="960" height="1356" fill="#FFFFFF"/>
+  <g id="page-title">
+    <text id="프로젝트_2" xml:space="preserve" x="80" y="70.04" font-size="22" font-weight="700" fill="#111111" letter-spacing="-0.44">프로젝트 2</text>
+  </g>
+  <g id="rule">
+    <rect x="80" y="94" width="800" height="2" fill="#222222"/>
+  </g>
+  <g id="project-title">
+    <text id="프로젝트_유형_:_두_번째_대표_프로젝트를_한_줄로_요약" xml:space="preserve" x="80" y="154.54" font-size="22" font-weight="600" fill="#111111" letter-spacing="-0.44">프로젝트 유형 : 두 번째 대표 프로젝트를 한 줄로 요약</text>
+  </g>
+  <g id="org">
+    <g id="logo">
+      <circle cx="97.5" cy="224.5" r="17.5" fill="#1428A0"/>
+      <text id="LOGO" xml:space="preserve" x="87.45" y="227.11" font-size="7" font-weight="800" fill="#FFFFFF" letter-spacing="0.14">LOGO</text>
+    </g>
+    <text id="회사명_D" xml:space="preserve" x="125" y="219.51" font-size="16" font-weight="600" fill="#111111" letter-spacing="-0.32">회사명 D</text>
+    <text id="YYYY.MM_–_YYYY.MM" xml:space="preserve" x="125" y="240.14" font-size="14" font-weight="400" fill="#777777" letter-spacing="-0.28">YYYY.MM – YYYY.MM</text>
+  </g>
+  <g id="sec-개요">
+    <text id="개요" xml:space="preserve" x="80" y="285.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">개요</text>
+    <text id="프로젝트가_다룬_영역과_범위를_적습니다._일반적인_사례와_무엇이_달랐는지" xml:space="preserve" x="80" y="315.59" font-size="18" font-weight="300" fill="#333333">프로젝트가 다룬 영역과 범위를 적습니다. 일반적인 사례와 무엇이 달랐는지, 어떤 제약 속에서 진행되었는지 적으면</text>
+    <text id="난이도가_드러납니다._단순_실행을_넘어_내가_설계한_구조나_방식이_있다면" xml:space="preserve" x="80" y="342.59" font-size="18" font-weight="300" fill="#333333">난이도가 드러납니다. 단순 실행을 넘어 내가 설계한 구조나 방식이 있다면 함께 언급합니다.</text>
+  </g>
+  <g id="divider">
+    <rect x="80" y="376.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-주요_고객·파트너">
+    <text id="주요_고객·파트너" xml:space="preserve" x="80" y="425.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">주요 고객·파트너</text>
+    <text id="고객사_/_파트너명_A" xml:space="preserve" x="80" y="457.59" font-size="18" font-weight="300" fill="#333333">고객사 / 파트너명 A</text>
+    <text id="해당_대상과_함께_한_일과_내_역할을_한_줄로_요약합니다" xml:space="preserve" x="80" y="487.51" font-size="16" font-weight="600" fill="#333333">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</text>
+    <text id="고객사_/_파트너명_B" xml:space="preserve" x="80" y="528.59" font-size="18" font-weight="300" fill="#333333">고객사 / 파트너명 B</text>
+    <text id="해당_대상과_함께_한_일과_내_역할을_한_줄로_요약합니다_2" xml:space="preserve" x="80" y="558.51" font-size="16" font-weight="600" fill="#333333">해당 대상과 함께 한 일과 내 역할을 한 줄로 요약합니다</text>
+  </g>
+  <g id="divider_2">
+    <rect x="80" y="592.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-역할">
+    <text id="역할" xml:space="preserve" x="80" y="641.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">역할</text>
+    <text id="·" xml:space="preserve" x="92" y="673.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="담당_업무_범위와_포트폴리오_구성" xml:space="preserve" x="107" y="673.59" font-size="18" font-weight="300" fill="#333333">담당 업무 범위와 포트폴리오 구성</text>
+    <text id="·_2" xml:space="preserve" x="92" y="696.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="실사·계약_검토_등_핵심_실무" xml:space="preserve" x="107" y="696.59" font-size="18" font-weight="300" fill="#333333">실사·계약 검토 등 핵심 실무</text>
+    <text id="·_3" xml:space="preserve" x="92" y="719.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="제약_조건을_반영한_구조_설계" xml:space="preserve" x="107" y="719.59" font-size="18" font-weight="300" fill="#333333">제약 조건을 반영한 구조 설계</text>
+    <text id="·_4" xml:space="preserve" x="92" y="742.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="유관_조직과의_협업_구조_조율" xml:space="preserve" x="107" y="742.59" font-size="18" font-weight="300" fill="#333333">유관 조직과의 협업 구조 조율</text>
+    <text id="·_5" xml:space="preserve" x="92" y="765.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="프로젝트_이후_후속_협업_지원" xml:space="preserve" x="107" y="765.59" font-size="18" font-weight="300" fill="#333333">프로젝트 이후 후속 협업 지원</text>
+  </g>
+  <g id="divider_3">
+    <rect x="80" y="801.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-주요_이슈">
+    <text id="주요_이슈" xml:space="preserve" x="80" y="850.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">주요 이슈</text>
+    <text id="·_6" xml:space="preserve" x="92" y="882.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="'할지_말지'보다_'어떻게_할지'가_핵심이었던_지점" xml:space="preserve" x="107" y="882.59" font-size="18" font-weight="300" fill="#333333">'할지 말지'보다 '어떻게 할지'가 핵심이었던 지점</text>
+    <text id="·_7" xml:space="preserve" x="92" y="905.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="성과뿐_아니라_조직_간_연계_가능성도_함께_고려" xml:space="preserve" x="107" y="905.59" font-size="18" font-weight="300" fill="#333333">성과뿐 아니라 조직 간 연계 가능성도 함께 고려</text>
+    <text id="·_8" xml:space="preserve" x="92" y="928.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="복잡한_구조에서의_이해관계자_정렬_및_조율_병목" xml:space="preserve" x="107" y="928.59" font-size="18" font-weight="300" fill="#333333">복잡한 구조에서의 이해관계자 정렬 및 조율 병목</text>
+  </g>
+  <g id="divider_4">
+    <rect x="80" y="964.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-해결_방식">
+    <text id="해결_방식" xml:space="preserve" x="80" y="1013.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">해결 방식</text>
+    <text id="·_9" xml:space="preserve" x="92" y="1045.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="맞춤형_구조_설계로_실행_불가능한_안을_실행_가능하게_전환" xml:space="preserve" x="107" y="1045.59" font-size="18" font-weight="300" fill="#333333">맞춤형 구조 설계로 실행 불가능한 안을 실행 가능하게 전환</text>
+    <text id="·_10" xml:space="preserve" x="92" y="1068.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="유관_조직과의_협업을_염두에_둔_구조_조율" xml:space="preserve" x="107" y="1068.59" font-size="18" font-weight="300" fill="#333333">유관 조직과의 협업을 염두에 둔 구조 조율</text>
+    <text id="·_11" xml:space="preserve" x="92" y="1091.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="협상_과정에서_특수_조건과_후속_리스크를_반영한_조항_설계" xml:space="preserve" x="107" y="1091.59" font-size="18" font-weight="300" fill="#333333">협상 과정에서 특수 조건과 후속 리스크를 반영한 조항 설계</text>
+  </g>
+  <g id="divider_5">
+    <rect x="80" y="1127.5" width="800" height="1" fill="#E1E1E1"/>
+  </g>
+  <g id="sec-결과">
+    <text id="결과" xml:space="preserve" x="80" y="1176.96" font-size="20" font-weight="700" fill="#111111" letter-spacing="-0.4">결과</text>
+    <text id="·_12" xml:space="preserve" x="92" y="1208.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="정량_성과_1_(예:_N년간_00건_집행)" xml:space="preserve" x="107" y="1208.59" font-size="18" font-weight="300" fill="#333333">정량 성과 1 (예: N년간 00건 집행)</text>
+    <text id="·_13" xml:space="preserve" x="92" y="1231.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="정량_성과_2_(예:_연간_00건_검토_및_실행)" xml:space="preserve" x="107" y="1231.59" font-size="18" font-weight="300" fill="#333333">정량 성과 2 (예: 연간 00건 검토 및 실행)</text>
+    <text id="·_14" xml:space="preserve" x="92" y="1254.59" font-size="18" font-weight="300" fill="#333333">·</text>
+    <text id="정성_성과_(예:_맞춤형_구조_설계_경험_축적)" xml:space="preserve" x="107" y="1254.59" font-size="18" font-weight="300" fill="#333333">정성 성과 (예: 맞춤형 구조 설계 경험 축적)</text>
+  </g>
+</svg>
